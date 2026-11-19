@@ -1,0 +1,4 @@
+BASELINE (V4 defaults): 8/16 margin +0 errs=0
+[1/70] 4/16 margin   -4,204  {'WHEAT_GROW_MULT': 1.487}
+[2/70] 2/16 margin   -5,487  {'FERT_RESERVE_MULT': 3.285}
+[3/70] FAILED TO RUN {'SHOP_BIAS': 1.166}

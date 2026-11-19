@@ -1,0 +1,19 @@
+# ---- Match replays (246 MB) ----
+# Raw episode JSON pulled from the Kaggle API, 17-27 MB per game.
+# Regenerate with harvest.py; the analysed results in r_*.jsonl are tracked instead.
+replays/
+
+# ---- Build artefacts ----
+kaggriculture.zip
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- Editors / OS ----
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

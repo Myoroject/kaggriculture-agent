@@ -1,0 +1,14 @@
+140 games in 12 chunks
+[1/12] vs_main_5.json (30s)
+[2/12] vs_melon_rush_0.json (122s)
+[3/12] vs_main_1.json (134s)
+[4/12] vs_main_2.json (135s)
+[5/12] vs_main_0.json (135s)
+[6/12] vs_main_4.json (135s)
+[7/12] vs_main_3.json (136s)
+[8/12] vs_melon_rush_1.json (139s)
+[9/12] vs_goose_bot_1.json (197s)
+[10/12] vs_goose_bot_0.json (198s)
+[11/12] vs_crop_bot_1.json (204s)
+[12/12] vs_crop_bot_0.json (209s)
+wrote 140 rows to C:\Users\JAMES\Desktop\Kaggriculture\r_farmer.jsonl in 209s

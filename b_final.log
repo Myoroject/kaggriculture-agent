@@ -1,0 +1,14 @@
+144 games in 12 chunks
+[1/12] vs_starter_3.json (81s)
+[2/12] vs_starter_1.json (113s)
+[3/12] vs_starter_0.json (115s)
+[4/12] vs_starter_2.json (116s)
+[5/12] mirror_1.json (163s)
+[6/12] mirror_0.json (163s)
+[7/12] mirror_2.json (163s)
+[8/12] mirror_3.json (187s)
+[9/12] vs_old_0.json (217s)
+[10/12] vs_old_1.json (218s)
+[11/12] vs_old_2.json (218s)
+[12/12] vs_old_3.json (221s)
+wrote 144 rows to C:\Users\JAMES\Desktop\Kaggriculture\r_final.jsonl in 221s

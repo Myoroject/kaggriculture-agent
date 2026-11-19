@@ -1,0 +1,17 @@
+E1: cfg={'EXP_E1': 1} wins 8/10 losses 2 ties 0  margin +3,259  errs=0
+E2: cfg={'EXP_E2': 1, 'E2_RADIUS': 4} wins 2/10 losses 8 ties 0  margin -5,970  errs=0
+E3: cfg={'EXP_E3': 1, 'E3_CARRY': 20} wins 2/10 losses 8 ties 0  margin -2,813  errs=0
+E4: cfg={'EXP_E4': 1} wins 1/10 losses 9 ties 0  margin -8,174  errs=0
+E5a: cfg={'MELON_TILES': 6} wins 5/10 losses 5 ties 0  margin +0  errs=0
+E5b: cfg={'MELON_TILES': 3} wins 3/10 losses 3 ties 4  margin +0  errs=0
+E5c: cfg={'MELON_TILES': 0} wins 4/10 losses 4 ties 2  margin +0  errs=0
+E6a: cfg={'EXP_E6': 1, 'E6_CAP': 20} wins 0/10 losses 10 ties 0  margin -23,556  errs=0
+E6b: cfg={'EXP_E6': 1, 'E6_CAP': 18} wins 0/10 losses 10 ties 0  margin -25,433  errs=0
+E6c: cfg={'EXP_E6': 1, 'E6_CAP': 16} wins 0/10 losses 10 ties 0  margin -30,660  errs=0
+E7: cfg={'EXP_E7': 1} wins 0/10 losses 10 ties 0  margin -35,610  errs=0
+E8: cfg={'EXP_E8': 1, 'E8_CAP': 12} wins 3/10 losses 7 ties 0  margin -2,024  errs=0
+E9: cfg={'EXP_E9': 1} wins 8/10 losses 2 ties 0  margin +7,558  errs=0
+E10: cfg={'EXP_E10': 1} wins 5/10 losses 5 ties 0  margin -924  errs=0
+E11: cfg={'EXP_E11': 1} wins 5/10 losses 5 ties 0  margin +0  errs=0
+E12: cfg={'EXP_E12': 1} wins 6/10 losses 4 ties 0  margin -1,263  errs=0
+DONE

@@ -1,0 +1,10 @@
+96 games in 8 chunks
+[1/8] vs_goose_bot_1.json (127s)
+[2/8] vs_melon_rush_1.json (140s)
+[3/8] vs_crop_bot_1.json (141s)
+[4/8] vs_goose_bot_0.json (141s)
+[5/8] vs_land_bot_0.json (151s)
+[6/8] vs_crop_bot_0.json (155s)
+[7/8] vs_melon_rush_0.json (157s)
+[8/8] vs_land_bot_1.json (199s)
+wrote 96 rows to C:\Users\JAMES\Desktop\Kaggriculture\r_spar.jsonl in 199s

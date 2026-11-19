@@ -1,0 +1,63 @@
+BASELINE (V4 defaults): 8/16 margin +0 errs=0
+[1/70] 4/16 margin   -4,204  {'WHEAT_GROW_MULT': 1.487}
+[2/70] 2/16 margin   -5,487  {'FERT_RESERVE_MULT': 3.285}
+NO RESULT
+ve_game
+oh_hell
+oshi_zumo
+oshi_zumo_proxy
+othello
+othello_proxy
+oware
+pathfinding
+pentago
+phantom_go
+phantom_ttt
+phantom_ttt_ir
+pig
+python_ant_foraging
+python_ant_foraging_proxy
+python_block_dominoes
+python_dynamic_routing
+python_hangman
+python_iterated_prisoners_dilemma
+python_kuhn_poker
+python_liars_poker
+python_pokerkit_wrapper
+python_pokerkit_wrapper_acpc_style
+python_repeated_pokerkit
+python_team_dominoes
+python_tic_tac_toe
+quoridor
+rbc
+repeated_game
+repeated_leduc_poker
+restricted_nash_response
+sheriff
+shogi
+shogi_proxy
+skat
+snake
+snake_proxy
+social_deduction
+solitaire
+spades
+start_at
+stones_and_gems
+tarok
+tic_tac_toe
+tiny_bridge_2p
+tiny_bridge_4p
+tiny_hanabi
+trade_comm
+turn_based_simultaneous_game
+twixt
+ultimate_tic_tac_toe
+ultimate_tic_tac_toe_proxy
+xiangqi
+y
+y_proxy
+yacht
+zerosum
+
+[3/70] FAILED TO RUN {'SHOP_BIAS': 1.166}

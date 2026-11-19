@@ -1,0 +1,1 @@
+{"name": "G_late3", "opp": "baseline.py", "config": {"PAYBACK_LATE": 3.0}, "jobs": [[2032, 1], [2033, 0], [2033, 1]], "agent": "season.py"}

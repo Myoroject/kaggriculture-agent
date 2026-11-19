@@ -1,0 +1,8 @@
+68 games in 6 chunks
+[1/6] heldout_vs_old_5.json (38s)
+[2/6] heldout_vs_old_0.json (126s)
+[3/6] heldout_vs_old_4.json (127s)
+[4/6] heldout_vs_old_1.json (128s)
+[5/6] heldout_vs_old_3.json (129s)
+[6/6] heldout_vs_old_2.json (129s)
+wrote 68 rows to C:\Users\JAMES\Desktop\Kaggriculture\r_heldout.jsonl in 129s

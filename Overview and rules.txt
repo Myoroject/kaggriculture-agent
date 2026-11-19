@@ -1,0 +1,5201 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Monday 10:54 PM
+
+Pasted text(6).txt
+Document
+I want to participate in kaggriculture 
+
+ive attached the rules can ypu explain this deeply 
+
+
+Pasted text(7).txt
+Document
+Overview of the project 
+
+No. You do not have to submit every day.
+
+The rule is:
+
+You may submit up to 5 agents per day. 
+
+
+Think of it as a maximum, not a requirement.
+
+Example 1 — Good approach
+Week 1
+Monday
+No submission
+(learning the game)
+
+Tuesday
+No submission
+(building baseline)
+
+Wednesday
+1 submission
+
+Thursday
+No submission
+
+Friday
+2 submissions
+Perfectly fine.
+
+Example 2 — Also allowed
+Monday
+5 submissions
+
+Tuesday
+0
+
+Wednesday
+0
+
+Thursday
+3
+
+Friday
+1
+Also completely valid.
+
+Why is there a limit?
+Imagine someone writes a script that submits:
+
+Model 1
+
+Model 2
+
+Model 3
+
+...
+
+Model 500
+
+That would overload the competition infrastructure and let people brute-force thousands of tiny variations.
+
+The 5-per-day limit encourages thoughtful experiments instead of endless submissions.
+
+Another important detail
+The overview also says:
+
+Only your latest 2 submissions are actively tracked and used for the final leaderboard. 
+
+
+So imagine:
+
+Day 1
+Bot A
+
+Day 2
+Bot B
+
+Day 3
+Bot C
+Now your active bots are:
+
+Bot B
+
+Bot C
+
+Bot A is no longer active for matchmaking.
+
+This means you don't want to submit a new version every time you change one line of code.
+
+What I recommend for us
+Since this is your first competition, I'd avoid chasing the leaderboard early.
+
+Week 1
+0–1 submissions
+
+Understand the environment
+
+Build a legal baseline agent
+
+Week 2
+2–3 submissions
+
+Try different strategies
+
+After that
+Submit only when you have a meaningful improvement to test.
+
+That way, each submission teaches us something.
+
+One thing I want us to adopt
+Instead of thinking:
+
+"I have 5 submissions today."
+
+We'll think:
+
+"Do I have a hypothesis worth testing?"
+
+For example:
+
+Hypothesis 1: Buying land earlier increases long-term profit.
+
+Hypothesis 2: Geese outperform wheat in the early game.
+
+Hypothesis 3: Delaying sales until prices recover yields more money.
+
+If the answer is "yes," we submit.
+
+If the answer is "no," we keep experimenting locally.
+
+That's how strong Kaggle competitors use their submission quota efficiently.
+
+
+
+Pasted text(8).txt
+Document
+
+Pasted text (2).txt
+Document
+of the overview im still slightly confused about the decision making process , the hypothesis 
+how much i will get 
+what will happen if we simulate this  ( i want a simulation pattern)
+how we can learn which hypthesis is working 
+how can i learn and know what action gives the most output so that i can decide my opprotunity cost
+what strategies i can use 
+What is animals for 
+
+
+explain each concept very clerly  like this 
+Melon's bonus window is ages 6–12, but base 1 plus one unit per watered day reaches the cap of 6 at age 10, so ages 11–12 add nothing. Fertilizing reaches the cap at age 8.
+Wheat and Carrot only reach their listed Max Yield of 6 and 4 with fertilizer; watering alone peaks at 4 and 3.
+Tomato and Strawberry are ongoing but not indefinite: production is capped at 4 scheduled yields (tomato at ages 8–11, strawberry at ages 10, 12, 14, 16), after which the plant decays into a weed.
+All plants must be watered every day. They will turn into weeds if they are not watered for two successive days. All animals must be fed every day using wheat. They will escape and be unrecoverable if they are not fed for two successive days. Wheat is also available to buy at the market and can be purchased at the current market price.
+
+
+more information attached 
+
+explain me evrything 
+
+This is exactly the right question.
+
+And I think we're about to do something much more valuable than just "participate in Kaggle."
+
+Looking at your questions, I realized something:
+
+You are not confused about the rules.
+
+You don't yet have the mental model of how the game works.
+
+Once that mental model clicks, everything else—hypotheses, opportunity cost, strategies, experiments—will make sense.
+
+I don't want to answer this in one chat.
+Honestly, I think that would hurt your learning.
+
+Why?
+
+Because between the official overview and the "Complete Getting Started Guide" you uploaded, there's well over 100 pages of concepts, formulas, mechanics, and strategy. 
+
+ 
+
+
+If I dump all of that into one response, you'll remember maybe 10%.
+
+Instead, I want to teach this like a university course.
+We'll build your understanding layer by layer.
+
+Module 1 — The World (Simulation)
+We'll answer questions like:
+
+What actually happens every turn?
+
+What happens every day?
+
+What does the game engine do?
+
+What information does my agent receive?
+
+What is a decision?
+
+What is an action?
+
+What is a state?
+
+Why are there 720 turns?
+
+Why does ordering of actions matter?
+
+We'll literally simulate a game turn by turn.
+
+Module 2 — Economics
+We'll understand:
+
+ROI
+
+Opportunity cost
+
+Cash flow
+
+Investment
+
+Capital
+
+Compounding
+
+Short-term vs long-term
+
+Example
+
+Should I buy
+
+Wheat
+
+Goose
+
+Cow
+
+Land
+
+We'll calculate everything ourselves.
+
+Module 3 — Crops
+Every crop
+
+We'll answer
+
+Why does it exist?
+
+When should I use it?
+
+When is it terrible?
+
+Expected profit
+
+Risk
+
+Time value
+
+Water cost
+
+Fertilizer value
+
+Market behavior
+
+We'll simulate
+
+One wheat
+
+↓
+
+One carrot
+
+↓
+
+One tomato
+
+↓
+
+etc.
+
+Module 4 — Animals
+Exactly like crops.
+
+We'll answer
+
+Why would anyone buy a goose?
+
+Why not only melons?
+
+Why cows?
+
+Why sheep?
+
+We'll calculate
+
+Daily ROI
+
+Payback period
+
+Expected lifetime value
+
+Action cost
+
+Feed cost
+
+Opportunity cost
+
+Module 5 — Dynamic Market
+This is probably the hardest topic.
+
+We'll simulate
+
+Only
+
+One product.
+
+One player.
+
+Then
+
+Two players.
+
+Then
+
+Town demand.
+
+You'll literally see the price moving.
+
+Module 6 — Decision Making
+This is where hypotheses come from.
+
+For example
+
+Hypothesis
+
+"Buying land before Day 8 produces higher total income."
+
+We'll test it.
+
+Module 7 — Strategy
+Only after understanding everything.
+
+We'll compare
+
+Wheat Rush
+
+Goose Economy
+
+Animal Empire
+
+Expansion First
+
+High Value Crops
+
+Market Manipulation
+
+Hybrid Strategies
+
+Module 8 — AI Agent
+Finally
+
+We'll design
+
+A real AI agent.
+
+Your questions deserve simulations
+You asked:
+
+what happens if we simulate this?
+
+Exactly.
+
+That's how I want to teach it.
+
+For example
+
+Instead of saying
+
+"Wheat costs $10"
+
+We'll do this
+
+Day 0
+
+Money = 3000
+
+↓
+
+Buy Wheat Seed
+
+Money = 2990
+
+↓
+
+Plant
+
+↓
+
+Water
+
+↓
+
+Day 1
+
+Nothing
+
+↓
+
+Water
+
+↓
+
+Day 2
+
+Harvest = 2 Wheat
+
+↓
+
+Sell
+
+↓
+
+Money = ?
+We'll compute every number.
+
+Then
+
+We'll compare
+
+Scenario A
+
+Buy Wheat
+
+↓
+
+Final Money
+
+3050
+versus
+
+Scenario B
+
+Buy Goose
+
+↓
+
+Final Money
+
+3020
+Now
+
+You'll understand
+
+why.
+
+Hypothesis
+This deserves its own lesson.
+
+Think of a hypothesis like
+
+"I believe this decision will produce more money."
+
+Example
+
+Current strategy
+
+Buy Goose
+
+↓
+
+Day 2
+Hypothesis
+
+Buying Goose on Day 5 instead will earn more.
+
+How do we know?
+
+We test.
+
+Exactly like science.
+
+Opportunity Cost
+You asked
+
+How do I know what action gives the most output?
+
+This is actually the central question of the whole competition.
+
+Every turn
+
+You have one action.
+
+Suppose
+
+Action A
+
+Water Wheat
+or
+
+Action B
+
+Collect Fertilizer
+Only one.
+
+Which?
+
+We calculate
+
+Expected value.
+
+Later
+
+We'll literally make a table
+
+Action	Expected Future Profit
+Water Wheat	$40
+Harvest Goose	$100
+Care Cow	$250
+Buy Land	$700 later
+Then
+
+Your AI simply chooses the highest value.
+
+This is actually AI.
+Notice something.
+
+We're not writing
+
+if crop:
+    water()
+We're writing
+
+Current State
+
+↓
+
+Estimate Future Reward
+
+↓
+
+Choose Best Action
+That is exactly how modern planning agents work.
+
+Here's how I'd like to run this
+Instead of a giant explanation, we'll do a Masterclass.
+
+I want to write it like a textbook with simulations, diagrams, quizzes, and exercises.
+
+Something like:
+
+Lesson 1: How one game turn works (with a complete simulation).
+
+Lesson 2: Understanding every crop through worked examples.
+
+Lesson 3: Animals, CARE, fertilizer, and why they exist.
+
+Lesson 4: Market dynamics and pricing.
+
+Lesson 5: Opportunity cost and hypothesis-driven experimentation.
+
+Lesson 6: Building increasingly sophisticated strategies.
+
+Lesson 7: Designing an AI agent from first principles.
+
+By the end, you won't just know the rules—you'll understand why they exist and how they interact.
+
+I genuinely think this could become one of the best learning resources on Kaggriculture, and something you could even publish as part of your AI learning journey.
+
+
+Yesterday 4:17 PM
+So write Lesson 1
+then i will ask questions 
+and you will answer and then once i understood i will say done then you will create a detailed document of lesson 1
+
+you start now
+
+I absolutely love this approach.
+
+We're not going to memorize rules.
+
+We're going to understand the world.
+
+From now on, imagine I'm your professor teaching "AI Decision Making through Kaggriculture."
+
+Ground Rule
+
+Don't try to remember anything.
+
+Just understand.
+
+If something is even 1% confusing, stop me.
+
+We'll discuss it.
+
+Only after you say "Done" will I write the polished Lesson 1 document.
+
+LESSON 1 — Understanding the World
+Chapter 1 — What is Kaggriculture?
+Forget farming.
+
+Seriously.
+
+If you think this is a farming game, you'll misunderstand everything.
+
+This is actually a game about making decisions.
+
+The farm is simply the environment where those decisions happen. 
+
+
+Imagine this instead.
+
+Suppose I give you
+
+₹3000
+and say
+
+"Make as much money as possible in the next 30 days."
+
+You have choices.
+
+You could
+
+buy a shop
+
+invest in stocks
+
+buy a taxi
+
+start a bakery
+
+Every choice changes what happens next.
+
+Kaggriculture is exactly the same.
+
+Instead of buying a bakery,
+
+you buy
+
+Seeds
+Animals
+Land
+Workers
+Those are simply different investments.
+
+Chapter 2 — What is your objective?
+This is the simplest rule in the game.
+
+At the end of the season,
+
+the player with the most money in the bank wins. Unsold items don't count until they are sold. 
+
+
+Not
+
+Most crops.
+
+Not
+
+Most animals.
+
+Not
+
+Largest farm.
+
+Only
+
+Money
+Example
+
+Player A
+
+₹90,000 Cash
+Player B
+
+₹80,000 Cash
+
++
+
+100 Melons
+Player A wins.
+
+Why?
+
+Because the melons haven't been converted into money.
+
+Real-life example
+Suppose you own
+
+20 iPhones
+Worth
+
+₹20 lakh
+
+But
+
+You haven't sold them.
+
+Your bank account still says
+
+₹50,000
+
+Meanwhile
+
+Someone else has
+
+₹5 lakh cash.
+
+Who has more money?
+
+The second person.
+
+Assets are not cash.
+
+Exactly the same here.
+
+Chapter 3 — Time
+Now comes the first important concept.
+
+The game lasts
+
+30 Days
+Every day has
+
+24 Turns
+Total
+
+30 × 24
+
+=
+
+720 Turns
+
+
+What is a turn?
+Think of Monopoly.
+
+Every player rolls.
+
+Moves.
+
+Next player.
+
+That's one turn.
+
+Here
+
+One turn means
+
+Your agent can decide what to do.
+
+Example
+
+Turn 1
+
+Buy Wheat Seed
+Turn 2
+
+Move East
+Turn 3
+
+Plant Wheat
+Turn 4
+
+Water Wheat
+Each decision consumes a turn.
+
+Analogy
+Think of a day.
+
+You wake up.
+
+8 AM
+
+↓
+
+Brush
+
+↓
+
+Breakfast
+
+↓
+
+Office
+
+↓
+
+Lunch
+
+↓
+
+Meeting
+
+↓
+
+Dinner
+
+↓
+
+Sleep
+Each activity takes time.
+
+You can't do everything at once.
+
+The same thing happens here.
+
+Chapter 4 — The Most Important Idea
+Every turn is precious.
+This is probably the most important sentence in Lesson 1.
+
+Imagine you have
+
+720 Coins
+Instead of turns.
+
+Every action costs
+
+1 Coin
+If you waste
+
+100 Turns
+You've burned
+
+100 Coins
+without earning anything.
+
+Example
+
+Imagine
+
+Turn
+
+PASS
+Nothing happens.
+
+That turn is gone forever.
+
+You never get it back.
+
+Real life example
+
+Imagine
+
+Today
+
+You spend
+
+6 hours
+
+watching random YouTube.
+
+Tomorrow
+
+Can you recover those six hours?
+
+No.
+
+Exactly the same.
+
+Chapter 5 — State
+Now we're entering AI.
+
+Every turn,
+
+the world has a condition.
+
+That condition is called
+
+State.
+
+Example
+
+Imagine you're playing chess.
+
+Board
+
+♔
+
+♕
+
+♖
+
+♙
+That arrangement of pieces
+
+is called
+
+the current state.
+
+Here
+
+The state contains
+
+Your money
+
+₹2750
+Your crops
+
+5 Wheat
+
+3 Tomatoes
+Your animals
+
+2 Cows
+Current market prices
+
+Milk
+
+₹180
+
+Egg
+
+₹55
+Day
+
+12
+Hour
+
+7
+Everything together
+
+=
+
+Current State. 
+
+
+Example
+Suppose
+
+State A
+
+Money
+
+3000
+
+No crops
+Should you buy
+
+Melon?
+
+Probably yes.
+
+State B
+
+Money
+
+100
+
+25 Melons already planted
+Should you buy Melon?
+
+Probably no.
+
+Notice
+
+Same action.
+
+Different state.
+
+Different answer.
+
+This is why
+
+there is no
+
+Always buy Melons.
+rule.
+
+Chapter 6 — Action
+Now
+
+You observe the state.
+
+Then
+
+You choose
+
+an action.
+
+Example
+
+Current State
+
+↓
+
+Choose
+
+Water
+Game changes
+
+↓
+
+New State
+
+Current State
+
+↓
+
+Choose
+
+Harvest
+↓
+
+New State
+
+Current State
+
+↓
+
+Choose
+
+Buy Goose
+↓
+
+New State
+
+Every action changes the future.
+
+Apple Example
+Imagine
+
+Current State
+
+You have
+
+₹100
+Action
+
+Buy Apple
+
+₹20
+New State
+
+Money
+
+₹80
+
+Apple
+
+1
+See what happened?
+
+The action
+
+transformed
+
+the state.
+
+Chapter 7 — Decision
+Now comes the heart of AI.
+
+Suppose
+
+Current State
+
+Money
+
+300
+Choices
+
+Buy Wheat
+
+Buy Goose
+
+Buy Land
+
+Hire Worker
+You can only choose
+
+one.
+
+That's called
+
+a Decision.
+
+Notice something.
+
+The game never tells you
+
+which decision is correct.
+
+It simply lets you choose.
+
+Then
+
+you live with the consequences.
+
+Real-life analogy
+You graduate.
+
+You have
+
+three offers.
+
+Google
+
+Startup
+
+MBA
+Nobody tells you
+
+the correct answer.
+
+You choose.
+
+Five years later
+
+you discover
+
+whether it was good.
+
+Kaggriculture works exactly like this.
+
+Chapter 8 — Decision Chain
+Here's where beginners usually have an "aha" moment.
+
+One decision
+
+doesn't affect
+
+one turn.
+
+It affects
+
+many future turns.
+
+Example
+
+Today
+
+Buy Goose
+
+↓
+
+Tomorrow
+
+Feed Goose
+
+↓
+
+Day 4
+
+Collect Egg
+
+↓
+
+Sell Egg
+
+↓
+
+Earn Money
+
+↓
+
+Buy Cow
+
+↓
+
+Milk
+
+↓
+
+Buy Land
+
+↓
+
+Hire Worker
+
+↓
+
+More Production
+
+↓
+
+More Money
+
+One decision started an entire chain.
+
+Example using apples
+Suppose
+
+Today
+
+You buy
+
+One Apple Tree
+Tomorrow
+
+Nothing.
+
+Day 30
+
+Apples.
+
+Sell.
+
+Money.
+
+Buy
+
+two trees.
+
+Now
+
+those two trees
+
+produce more apples.
+
+See?
+
+One decision
+
+changed the next month.
+
+The Big Formula
+Every turn follows exactly the same pattern.
+
+Observe State
+
+↓
+
+Think
+
+↓
+
+Choose Action
+
+↓
+
+Environment Changes
+
+↓
+
+New State
+
+↓
+
+Repeat
+
+720 Times
+This loop is the foundation of AI agents, reinforcement learning, and decision-making systems. Kaggriculture exposes your agent to a state each turn, your agent returns actions, the environment updates, and the cycle repeats until the season ends. 
+
+
+Homework (Don't answer now—just think)
+Imagine it's Day 1, Turn 1.
+
+You have:
+
+₹3000
+
+Empty farm
+
+No crops
+
+No animals
+
+No workers
+
+Without worrying about whether it's optimal, answer these questions in your head:
+
+What is the current state?
+
+What actions are available to you?
+
+Why is choosing one action automatically giving up all the others for that turn?
+
+If you buy a goose today, can that single decision affect Day 20?
+
+If you can explain those four questions in your own words, you've understood the core loop of the entire competition.
+
+Don't say "Done" yet. 😊
+
+Now become the student. Ask me every question that came to your mind while reading Lesson 1—no matter how basic or detailed. The stronger this foundation becomes, the easier every later lesson (economics, strategies, and AI agents) will feel.
+
+
+Today 8:19 PM
+Les go to next lesson
+
+Perfect. Now that you understand the world, we move to the question every top Kaggle competitor asks:
+
+"How do I decide what to do next?"
+
+This lesson is about thinking, not coding.
+
+LESSON 2 — Decision Making & Opportunity Cost
+Chapter 1 — Every Turn Is a Choice
+Imagine it's your turn.
+
+Your current state is:
+
+Money = ₹3000
+Empty Farm
+Day = 1
+Turn = 1
+What can you do?
+
+Buy wheat seeds
+
+Buy carrot seeds
+
+Buy a goose
+
+Buy a cow
+
+Buy fertilizer
+
+Hire a worker
+
+Buy land
+
+Move
+
+PASS
+
+You cannot do all of them.
+
+You must choose.
+
+This is called a decision.
+
+Example: Choosing Dinner
+Imagine you have ₹500.
+
+You can buy:
+
+Pizza = ₹500
+
+OR
+
+Burger = ₹500
+You cannot buy both.
+
+Choosing pizza means giving up the burger.
+
+That "thing you gave up" is called opportunity cost.
+
+Chapter 2 — What is Opportunity Cost?
+Opportunity cost is the value of the best option you didn't choose.
+
+Example:
+
+You have ₹300.
+
+Option A:
+
+Buy Goose
+Option B:
+
+Buy Wheat Seeds
+You buy the goose.
+
+The opportunity cost is:
+
+"What profit could I have made from wheat instead?"
+
+Notice:
+
+It's not the cost of the goose.
+
+It's the missed opportunity.
+
+Apple Example
+Suppose:
+
+₹100
+Choice 1:
+
+Buy an Apple.
+
+Choice 2:
+
+Buy a Book.
+
+You buy the apple.
+
+Tomorrow you realize the book would have helped you earn ₹1000.
+
+The opportunity cost wasn't ₹100.
+
+It was the ₹1000 future benefit you missed.
+
+Chapter 3 — Decisions Are About the Future
+Beginners ask:
+
+"What gives me the most money today?"
+
+Experts ask:
+
+"What gives me the most money by Day 30?"
+
+These are different questions.
+
+Example
+Option A
+
+Sell Wheat Today
+
++₹200
+Option B
+
+Keep Wheat
+
+Feed Cow
+
+Cow Produces Milk
+
+Milk Sells Later
+
++₹800
+Today:
+
+Option A looks better.
+
+End of season:
+
+Option B wins.
+
+Chapter 4 — What is a Strategy?
+A strategy is a long-term plan, not a single action.
+
+Think of chess.
+
+Moving one pawn is not a strategy.
+
+Controlling the center is.
+
+Similarly:
+
+Buying one wheat seed is not a strategy.
+
+Strategy Examples
+Strategy A — Wheat Economy
+
+Buy Wheat
+
+↓
+
+Harvest Quickly
+
+↓
+
+Sell
+
+↓
+
+Repeat
+Goal:
+
+Fast cash flow.
+
+Strategy B — Animal Economy
+
+Buy Goose
+
+↓
+
+Feed Daily
+
+↓
+
+Collect Eggs
+
+↓
+
+Sell Eggs
+
+↓
+
+Buy More Animals
+Goal:
+
+Continuous income.
+
+Strategy C — Expansion
+
+Save Money
+
+↓
+
+Buy More Land
+
+↓
+
+Grow More Crops
+Goal:
+
+Bigger production later.
+
+Notice:
+
+A strategy is made of many decisions.
+
+Chapter 5 — What is a Hypothesis?
+This is the most important concept in Kaggle.
+
+A hypothesis is simply:
+
+"I believe doing X will produce a better result than doing Y."
+
+It is not a fact.
+
+It is something you test.
+
+Example
+Current strategy:
+
+Buy Wheat on Day 1.
+New idea:
+
+Buy Goose on Day 1.
+Hypothesis:
+
+"Buying a goose first will produce more money by Day 30."
+
+Is it true?
+
+We don't know.
+
+So we test it.
+
+Chapter 6 — How Do We Test a Hypothesis?
+This is where simulation comes in.
+
+Imagine these two experiments.
+
+Experiment A
+Start Money = ₹3000
+
+↓
+
+Buy Wheat
+
+↓
+
+Play 30 Days
+
+↓
+
+Final Money = ₹8,200
+Experiment B
+Start Money = ₹3000
+
+↓
+
+Buy Goose
+
+↓
+
+Play 30 Days
+
+↓
+
+Final Money = ₹9,100
+Result:
+
+Goose wins.
+
+Does that prove goose is always better?
+
+No.
+
+Maybe that was against one opponent.
+
+Maybe prices changed.
+
+So we run more experiments.
+
+Chapter 7 — Think Like a Scientist
+Every experiment follows this pattern.
+
+Step 1
+Question
+
+"Is Goose better than Wheat?"
+
+Step 2
+Hypothesis
+
+Goose earns more money.
+
+Step 3
+Experiment
+
+Run 20 games.
+
+Step 4
+Observe
+
+Average Money
+
+Goose = ₹9,000
+
+Wheat = ₹8,200
+Step 5
+Conclusion
+
+Current evidence supports Goose.
+
+Not forever.
+
+Just with the current environment.
+
+Chapter 8 — Why One Game Is Not Enough
+Imagine tossing a coin.
+
+One toss:
+
+Heads
+Can you conclude:
+
+"This coin always lands on heads."
+
+No.
+
+Now toss 1000 times.
+
+You'll get a much better estimate.
+
+The same applies here.
+
+One game can be lucky.
+
+Twenty games are more reliable.
+
+One hundred games are even better.
+
+Chapter 9 — Measuring Decisions
+Every action should answer one question:
+
+Did this increase my final money?
+
+Example:
+
+Hypothesis:
+
+Water Melons Every Day
+Experiment:
+
+20 games.
+
+Average Money:
+
+₹10,200
+
+New Hypothesis:
+
+Use Fertilizer on Melons
+20 games.
+
+Average Money:
+
+₹11,300
+
+Now you have evidence that the second approach is better under those conditions.
+
+Chapter 10 — Building an Experiment Log
+Professional ML engineers never rely on memory.
+
+They record every experiment.
+
+Example:
+
+Experiment	Change	Average Money	Win Rate	Conclusion
+E1	Wheat only	₹8,200	42%	Baseline
+E2	Goose first	₹9,100	55%	Better
+E3	Goose + Care	₹10,400	68%	Better
+E4	Early Land	₹8,900	50%	Worse than E3
+This becomes your knowledge base.
+
+The Mental Model
+Every strong Kaggriculture player repeats this loop:
+
+Observe
+
+↓
+
+Think
+
+↓
+
+Create Hypothesis
+
+↓
+
+Run Experiment
+
+↓
+
+Measure Results
+
+↓
+
+Learn
+
+↓
+
+Improve Strategy
+
+↓
+
+Repeat
+This is exactly how top Kaggle competitors, product teams, and ML researchers improve systems—through evidence, not guesses.
+
+One Important Clarification
+You asked:
+
+"How can I know what action gives the most output?"
+
+The answer is:
+
+You don't know at the beginning.
+
+You estimate.
+
+Then you test.
+
+Then you measure.
+
+Over time, your agent becomes smarter because you've built evidence about what works.
+
+Homework
+Imagine you have ₹3000 on Day 1.
+
+Create three hypotheses. For example:
+
+"Buying a goose first earns more than buying wheat first."
+
+"Buying land before Day 10 increases end-of-game money."
+
+"Selling eggs immediately is better than storing them."
+
+Don't worry about whether they're correct.
+
+The goal is to practice thinking like an experimenter rather than guessing.
+
+Lesson 3 will be where the game really comes alive.
+
+We'll build an economic model for every crop and every animal:
+
+Why each exists.
+
+When to use it.
+
+When not to use it.
+
+ROI, payback period, action cost, and hidden costs.
+
+Why two crops with similar prices can require completely different strategies.
+
+That's where you'll start thinking like someone designing a winning agent rather than just playing the game.
+
+
+Overview
+Each player starts with an empty farm and a small amount of income (seed money, if you will). Each turn, they can perform actions such as moving around the board, purchasing seeds or livestock, planting seeds, watering plants, harvesting produce or animal products, and selling that produce at the market. The game runs for a fixed amount of time representing one season, and the winner is determined by who has the most money in the bank at the end.
+
+Object Types
+Type Yield Type Seed Cost Base Market Price Time to First Yield Time to Max Yield Subsequent Yields Max Yield Action Cost Yield / tile / day
+Wheat One-time 10 25 2 days 4 days none 6 (4 unfertilized) 1 0.80
+Carrot One-time 20 35 2 days 3 days none 4 (3 unfertilized) 1 0.75
+Tomato Ongoing 50 60 8 days 11 days every day ×4 4 1 0.33
+Strawberry Ongoing 100 120 10 days 16 days every other day ×4 4 1 0.24
+Melon One-time 80 250 10 days 10 days none 6 1 0.55
+Goose/Egg Ongoing 300 50 4 days NA every day, indefinitely 4 held 1 + 1 (build coop) 1.00
+Cow/Milk Ongoing 400 160 8 days NA every two days, indefinitely 6 held 1 + 1 (build pasture) 0.50
+Sheep/Wool Ongoing 500 200 6 days NA every three days, indefinitely 6 held 1 + 1 (build pasture) 0.33
+Fertilizer NA 100 X X X 1
+For crops, "Yield / tile / day" is total units harvested divided by the days the tile is occupied, watering daily and harvesting at peak yield. For animals it is the steady-state production rate (1 / interval) once the first yield lands; animals keep producing for as long as they are fed, so there is no fixed occupancy to divide by. "Max Yield" for animals is max_held, the cap on unharvested product sitting on the tile, not a lifetime total.
+
+Crop "Time to Max Yield" is the age at which yield stops increasing under daily watering, which is not always the end of the bonus window:
+
+Melon's bonus window is ages 6–12, but base 1 plus one unit per watered day reaches the cap of 6 at age 10, so ages 11–12 add nothing. Fertilizing reaches the cap at age 8.
+Wheat and Carrot only reach their listed Max Yield of 6 and 4 with fertilizer; watering alone peaks at 4 and 3.
+Tomato and Strawberry are ongoing but not indefinite: production is capped at 4 scheduled yields (tomato at ages 8–11, strawberry at ages 10, 12, 14, 16), after which the plant decays into a weed.
+All plants must be watered every day. They will turn into weeds if they are not watered for two successive days. All animals must be fed every day using wheat. They will escape and be unrecoverable if they are not fed for two successive days. Wheat is also available to buy at the market and can be purchased at the current market price.
+
+Actions
+Each turn, the player may take one action. There are 24 turns per day, and 30 days in the season - 720 total turns.
+
+Farmer / Farm Hand Action
+Each Farmer / Farm Hand can be given an action every turn. Farmer/Farm Hand CAN occupy the same space.
+
+Movement
+NORTH, SOUTH, EAST, WEST — Move one cell in that direction. Moves off the edge of the board are no-ops. Locked tiles are passable: a unit may move onto and across unbought quadrants, but tile actions (PLANT, WATER, BUILD_*, etc.) all no-op on a locked tile and consume nothing.
+Shed
+Picks up an item from the shed (must be orthogonally adjacent) into the inventory
+
+PICKUP <item> [n] — move up to n of <item> (default 1) from the shed into the active farmer/hand's inventory. Any item present in the shed is valid (animals, fertilizer, harvested produce, etc.). Seeds live in a separate slot and are never picked up — PLANT consumes them directly.
+DROP — orthogonally adjacent to the shed, dump the active farmer/hand's entire current inventory into the shed. Overflow past shedCapacity is discarded. No-op if not shed-adjacent.
+Plants
+PLANT — Plant a seed purchased from the market
+Seeds are automatically available to all Farmers / Farm Hands
+If you try to plant too many in a specific turn, none are planted
+ie if you have 1 melon seed, but two units do the PLANT MELON command
+WATER — Water a plant. This only needs to be done once per day, and subsequent waterings on the same day are a no-op.
+HARVEST — Gather produce from a plant. If the plant does not have subsequent yields, it will be removed from the map. Each harvest action will yield at least one unit of the crop, with the potential of additional yield depending on watering and fertilizer (the formula differs by crop type — see harvest yields below). Harvested items are added to the inventory.
+FERTILIZE — Fertilize a plant to increase its potential yield (see harvest yields below).
+Doubles the per-day yield bonus for the next 3 days. The bonus only applies on days the plant is also watered (basic needs first).
+Animals
+PLACE <item> [n] — Drop items from the active farmer/hand inventory into either a tile or the shed:
+Animal placement: standing on a matching unoccupied structure (GOOSE on a coop, SHEEP/COW on a pasture) places one animal from inventory onto the tile. The n argument is ignored.
+Shed drop: standing orthogonally adjacent to the shed moves up to n (default 1) of <item> from inventory into the shed. Capped by shedCapacity; excess stays in inventory.
+FEED — Feed an animal using wheat (only needs to be done once per day)
+HARVEST — Collect the eggs/milk/wool produced by the animal.
+COLLECT_FERTILIZER — Collect 1 fertilizer from the animal. Every surviving animal makes 1 available at the end of each day, whether or not it was fed or cared for. Uncollected fertilizer does not accumulate, so an animal left alone for five days still yields 1 unit.
+CARE — Care for an animal (once per day, no-op if already cared for). See animal care below.
+Animal Care
+CARE banks a yield bonus that is paid out on the animal's next scheduled production:
+
+At end of day, if the animal was both fed AND cared for that day, pending_care_bonus increments by 1. Days where the animal was unfed do not bank a bonus (basic needs first).
+On a scheduled production day, if the animal is fed, the entire banked bonus is added to that production's yield (in addition to the base 1) and the bank resets to 0.
+If the animal is unfed on the production day, the base 1 unit is still produced, but the banked bonus is not applied and the bank resets to 0.
+pending_care_bonus is capped indirectly by the per-animal max_held cap on yield_units.
+Terrain
+BUILD_COOP - adds a coop to an unoccupied tile
+BUILD_PASTURE - add pasture to an unoccupied tile
+DIG — Remove a plant from a square to free up space OR remove a weed from a square (does not yield any produce) OR remove an empty goose coop / pasture. A coop or pasture with an animal on it cannot be dug; the DIG is a no-op.
+Other
+PASS — Default if there is nothing to do (optional)
+Market Action
+Each turn you can submit up to maxMarketOrdersPerTurn (default 10) market actions; any orders past that limit are silently dropped. This is an ordered list and market orders will be processed in order simultaneously (one from each player) while both players have orders.
+
+BUY_SEED — Purchase N units of a single item from the market.
+BUY_SEED WHEAT 1
+BUY_ANIMAL -
+BUY_ANIMAL GOOSE 1
+BUY_PRODUCT
+BUY_PRODUCT WHEAT 1
+BUY_PRODUCT FERTILIZER 1
+SELL — Sell N units of a single item to the market.
+SELL WHEAT 1
+HIRE — Hire a farm hand for the day. Cost increases for each extra hand hired on the same day.
+BUY_LAND - unlock a new 5x5 segment of land to plant on. Increasing in cost.
+Costs are: $1k, $2k, $4k
+Watering / Animal Feed
+Plants (and animals) must be watered/fed a minimum of every other day. Watering only needs to be done once per day, and subsequent watering actions are a no-op. In the case of plants not watered for two consecutive days, at the end of the day they turn into a WEED. In the case of animals they escape (unrecoverable).
+
+A new seed starts with consecutive_unwatered = 1 — the planting day itself counts as the first missed day. A seed planted and left unwatered that same day reaches 2 at the end-of-day refresh and becomes a weed that night, before it grows. There is no grace period for fresh plantings.
+
+A newly placed animal starts with consecutive_unfed = 0, so it survives its first day unfed.
+
+Note that watering one-time yield plants during their yield window results in a higher yield. This is NOT true for ongoing yield plants/animals. See below.
+
+Harvest Yields
+Plants will potentially have higher yields based on how well they have been cared for.
+
+One-time crops (wheat, carrot, melon): Starting at half the plant's max_yield_day (Time to Max Yield) rounded up, watering during the bonus window will add one unit per day to the total harvestable yield.
+Fertilized plants add 2 per day instead.
+Ongoing crops (tomato, strawberry): Scheduled production happens at fixed intervals. The base yield is 1 per scheduled production. If the plant is fertilized AND watered that day, yield is doubled to 2.
+Once a plant has hit its maximum lifespan, the total yield available on the plant will reduce by 1 every other turn until it hits 0, at which point the plant becomes a weed.
+One-time crops reach max lifespan one day after max_yield_day.
+Ongoing crops start decay one day after their cumulative production count reaches max_yield (i.e. they've fired enough scheduled productions to hit the cap, regardless of whether the produce has been harvested).
+Map Features
+Each player has their own farm with a set number of squares. Players are unable to see the state of the other’s shed, but can see the state of their opponent’s farm.
+
+Farm Space
+The land near your farm is a boardSize × boardSize grid (default 10×10), divided into four 5×5 quadrants. At first, your farm covers one quadrant (25% of the squares). For an increasingly large fee, you can buy the neighboring quadrants and eventually cover 100% of the squares.
+Each plant or animal occupies one square on the farm.
+Players can allocate these squares however they choose between crops and livestock. There are no specific limits per type.
+Weeds have a chance of spawning on any empty cells on the farm, and must be cleared before the land can be used for other purposes.
+Squares on the farm can be either a plant, a coop/pasture, a weed, or empty.
+Shed (Inventory)
+Functions as an inventory for items that are harvested but not yet sold, or for seeds that have not yet been planted
+Farmer and hired farm hands will spawn at the shed at the start of each day
+Farmer and hired farm hands drop their inventory at the end of the day in the shed (if there is room)
+Limited to 100 items, excluding seeds. Once the shed is full, any further items added (via PLACE mid-day or end-of-day inventory drop) are discarded — there is no overflow holding area, so stockpiling on farmer/hand inventories does not bypass the cap.
+The shed sits at the center of the board and is not a tile — it never appears in the tiles array, whose only values are None, "LOCKED", and structure dicts. "Orthogonally adjacent to the shed" means standing on one of the four center tiles, (half-1, half-1), (half, half-1), (half-1, half), (half, half) for half = boardSize // 2. At the default boardSize = 10 those are (4,4), (5,4), (4,5), and (5,5), one in each quadrant.
+
+Farmer/Farm Hand
+Hiring
+Hiring is a market order (HIRE). It costs more every time you want to hire an additional hand each day. At the end of the day all, hands drop inventory at the farm and disappear (need to be re-hired each day)
+Cost is farmHandCostMult * fib(n) where n is the number of hires already made today (fib starts 1, 1, 2, 3, 5, 8, 13, …).
+With the default farmHandCostMult = 1: 1, 1, 2, 3, 5, 8, 13, 21, etc… (resets at the start of each day)
+A hired hand appears orthogonally adjacent to the shed in a free space following NWSE. If there are not open spaces, it looks for the one with the least occupants, breaking ties by NWSE preference
+Spawn placement ignores whether the tile is locked. Since the main farmer starts on (4,4), the least-occupied rule sends the first hire of each day to (5,4), which is locked until the NE quadrant is bought. Locked tiles are passable, so a hand spawned on one can move back to unlocked land.
+Inventory
+When harvesting or picking items up, they are added to inventory.
+Can drop items in the shed
+At the end of the day, all items in all inventory will be added to shed inventory (if there is room). Anything that doesn't fit is discarded — overflow is lost.
+Town Buildings
+As the season progresses, new shops unlock at regular intervals (every townShopUnlockInterval days, default 3). Each unlock is randomly selected from the shops that have not yet been added; once unlocked, a shop stays active for the rest of the game. Total demand grows monotonically as more shops unlock.
+
+Each unlocked shop consumes one of every product it demands every townShopSellInterval turns (default 4). So with the default interval, a shop demanding wheat removes 6 wheat from the market per day. Single-product shops consume 2x.
+
+In addition, the town center consumes one of every product (excluding fertilizer) every townCenterSellInterval turns (default 12). After day 10 this is increased to 2 of each, and after day 20 it is increased to 4 of each.
+
+Shop Type Increases Demand For
+Bakery eggs, wheat
+Pizza Shop milk, tomatoes, wheat
+Brunch Spot eggs, wheat, strawberries
+Yarn Store wool (2x)
+Ice Cream Shop strawberries, milk, wheat
+Pet Cafe carrots (2x)
+Smoothie Shop strawberries, milk
+Farmers Market wheat, carrots, tomatoes, strawberries
+Market Mechanics
+The market has an unlimited supply of seeds and animals at fixed prices. Sell prices, however, move dynamically per resource and persist across days.
+
+Every product (and fertilizer) starts the game with a market inventory of I0 = 10,000 units, far above any single game's realistic production volume so that inventory is essentially guaranteed to stay positive. The sell price for a product is base at I0, rises as inventory falls (players buying or town consumption draining supply), and falls as inventory grows (players selling).
+
+Selling inventory to the market
+Players can queue any number of sell or buy orders (for any quantity) in the market action list. Orders are processed concurrently across players, one unit at a time. For example, when both players issue SELL CARROT 10 first, we take the current carrot price, give both players that price for their first carrot, then add 2 carrots to the market (1 from each player) — which may shift the price — and repeat until both orders complete.
+
+If the sell price has been driven down to $1 (the price floor), the unit is still purchased but is not added to market inventory, so the floor remains responsive to subsequent buys.
+
+Buying inventory from the market
+Only WHEAT and FERTILIZER can be bought from the market via BUY_PRODUCT (other products are sold at the market but not bought back). Selling is unrestricted: every product, including fertilizer collected from animals, can be sold via SELL. Two things drain market inventory: town buildings (town center and shops, which consume products for free) and player BUY_PRODUCT orders. Buy orders follow the same one-unit-at-a-time concurrent procedure as sell orders. If a player runs out of money mid-order, the order is stopped.
+
+The buy price is quoted at the post-buy inventory and the sell price is quoted at the pre-sell inventory, so an immediate buy followed by a sell of the same item against an otherwise-unchanged market nets exactly zero.
+
+The Price Function
+For each resource the curve is defined by a base price, an anchor throughput T, and an independent shape function + target move for each side of the equilibrium:
+
+price(inv) = base + sign · amp · f(|inv − I0|)
+sign = +1 if inv < I0 (scarcity → price up)
+sign = −1 if inv > I0 (glut → price down)
+amp = target · base / f(T) (derived; not stored)
+f ∈ { linear, sq, sqrt, log, log10 } (log uses ln(1+x), so f(0)=0)
+Floored at $1 and rounded to the nearest dollar.
+
+T is the production capacity of a single 5×5 field over a 24-day window at optimal watering with no fertilizer (animal totals are pre-discounted by 30% to account for wheat-feed overhead, and allow one day to build the coop or pasture). The 24-day window is a calibration horizon, not the 30-day season length. It is shorter on purpose: the opening days are setup-heavy and yield little.
+
+target says "moving T units past I0 shifts the price by target × base." Picking different f and target on each side lets resources with similar production profiles play very differently strategically — wheat panics on scarcity but absorbs gluts, carrot is the opposite; melon barely reacts to scarcity but crashes hard on overproduction; wool mirrors melon at a smaller scale. Premium resources (base > $100: strawberry, melon, milk, wool) use above_target > 1, so even modest gluts drive them straight to the $1 floor — bundling and timing sales matters more for these than for staples.
+
+Resource Base I0 T Below func Below target Above func Above target P(I0−T) P(I0+T) P(I0+2T)
+Wheat 25 10,000 400 sqrt 0.80 log 0.20 $45 $20 $19
+Carrot 35 10,000 450 log 0.20 sqrt 0.70 $42 $10 $1
+Tomato 60 10,000 200 linear 0.40 sqrt 0.60 $84 $24 $9
+Strawberry 120 10,000 100 sqrt 0.70 linear 1.60 $204 $1 $1
+Melon 250 10,000 300 log 0.20 sq 3.60 $300 $1 $1
+Egg 50 10,000 332 linear 0.40 log 0.20 $70 $40 $39
+Milk 160 10,000 122 sqrt 0.60 linear 1.60 $256 $1 $1
+Wool 200 10,000 105 log 0.20 sq 3.20 $240 $1 $1
+Fertilizer 100 10,000 200 linear 0.40 linear 0.40 $140 $60 $20
+The defaults live in MARKET_PARAMS in kaggriculture.py. Per-resource overrides (sparse: any subset of base, I0, T, below_func, below_target, above_func, above_target) can be supplied at episode creation via env.configuration["marketParams"] without touching code, e.g. {"WOOL": {"above_target": 0.95}}.
+
+Turn Processing Order
+Action validation — verify action legality
+Player actions — record the actions taken by each player (happening simultaneously)
+Market actions - process market queue in order by player (described above)
+Town buy actions - town center and shops reduce inventory
+Update observations
+Day refresh — if applicable, update the condition of plants and animals for a new day, and reset their fed/watered to condition to false
+Market refresh — modify the price of items on the market based on sells from previous turn
+Income update — update the player’s bank based on any buys or sells
+Farm update — clear plants that have been harvested, items from the inventory that have been used or sold, add new plants/animals to the farm, etc
+Win Conditions
+The win condition is simple- whoever has the greatest number of coins at the end of the season is the winner. It is also possible that the two players will tie.
+
+Reward
+The player who has the most money in the bank at the end of the game wins. Unsold items in the inventory do not count towards that total.
+
+Observation Format
+The top-level observation passed to each agent:
+
+{
+"player": int, # 0 or 1
+"day": int, # 0-indexed in-game day
+"hour": int, # 0-indexed turn within the day
+"farms": [farm, farm], # public per-player state, indexed by player id (shared)
+"market": { # shared
+"inventory": { "WHEAT": int, "CARROT": int, ... },
+"prices": { "WHEAT": int, "CARROT": int, ... },
+},
+"town": { # shared
+"unlocked_shops": ["BAKERY", ...],
+},
+"private": { # this player only; opponent's private state is not visible
+"shed": { "WHEAT": int, "GOOSE": int, "FERTILIZER": int, ... },
+"seeds": { "WHEAT": int, "CARROT": int, ... },
+"inventories": [farmer_inv, hand_inv, ...], # [0] is the main farmer
+},
+}
+Each farm dict (public, visible to both players):
+
+{
+"money": float,
+"tiles": [[tile, ...], ...], # tiles[y][x]
+"farmer": [x, y],
+"hands": [[x, y], ...], # hired hands for the current day
+"unlocked_quadrants": ["NW", ...], # subset of {"NW","NE","SW","SE"}
+"hires_today": int, # used to price the next HIRE
+}
+A tile is one of:
+
+None — empty unlocked tile
+"LOCKED" — tile in a quadrant the player has not yet bought
+a plant dict:
+{
+"kind": "PLANT",
+"crop": "WHEAT" | "CARROT" | "TOMATO" | "STRAWBERRY" | "MELON",
+"planted_day": int,
+"watered_today": bool, # reset to False each end-of-day
+"consecutive_unwatered": int, # 2+ → tile turns to a weed
+"yield_units": int, # units currently harvestable
+"max_lifespan_step": int, # step at which decay begins; -1 for ongoing crops
+"fertilized_until_day": int, # last day fertilizer bonus applies; -1 if none
+}
+a weed dict: {"kind": "WEED"}
+an animal structure dict (coop/pasture, optionally occupied):
+{
+"kind": "COOP" | "PASTURE",
+"animal": "GOOSE" | "COW" | "SHEEP" | None, # None until PLACEd
+"placed_day": int,
+"yield_units": int,
+"fed_today": bool,
+"consecutive_unfed": int, # 2+ → animal escapes
+"cared_today": bool,
+"fertilizer_available": bool, # set at end-of-day for every surviving animal; cleared by COLLECT_FERTILIZER
+"pending_care_bonus": int, # banked CARE bonus, applied on the next yield tick
+}
+Quick Start
+from kaggle_environments import make
+
+def my_agent(obs):
+# Buy one wheat seed on the very first turn, then PASS forever after.
+if obs.get("step", 0) == 0:
+return {"farmer": ["PASS"], "market": [["BUY_SEED", "WHEAT", 1]]}
+return {"farmer": ["PASS"], "market": []}
+
+env = make("kaggriculture", configuration={"episodeSteps": 200})
+env.run([my_agent, "random"])
+env.render(mode="ipython", width=800, height=800)
+Configuration Defaults
+Per-crop seed costs and per-product base prices are not configurable; they are documented in the Object Types and Price Function tables above. The configurable knobs are:
+
+Parameter Default Description
+episodeSteps 720 Total turns in the season (24 turns × 30 days)
+boardSize 10 Width and height (in tiles) of each player's square farm. Advanced uses 10 = four 5x5 quadrants
+startingMoney 3000 Coins each player starts with
+maxMarketOrdersPerTurn 10 Maximum number of market orders processed per player per turn; extras are silently dropped
+turnsPerDay 24 Number of turns that make up one in-game day
+shedCapacity 100 Max non-seed items the shed can hold; overflow at end-of-day drop is discarded
+weedSpawnChance 0.005 Per-tile probability of a weed spawning on an empty unlocked tile during end-of-day refresh
+townShopUnlockInterval 3 Days between successive town shop unlocks
+townShopSellInterval 4 Turns between consumption ticks by every unlocked town shop
+townCenterSellInterval 12 Turns between consumption ticks by the town center
+seed null Optional input seed for deterministic episode generation; cleared from config after read so it stays out of agent observations
+Getting Started: Test Locally & Submit
+This guide walks you through building an agent, testing it locally, and submitting it to this simulation competition.
+
+Test Locally
+Install the environment from PyPI (any recent release that includes Kaggriculture):
+
+pip install -U kaggle-environments
+Run a game from Python or a notebook — you can pass agent functions directly, or paths to .py files:
+
+from kaggle_environments import make
+
+env = make("kaggriculture", configuration={"episodeSteps": 720}, debug=True)
+env.run([agent, "random"]) # or env.run(["main.py", "random"]) to load from a file
+
+View result
+final = env.steps[-1]
+for i, s in enumerate(final):
+print(f"Player {i}: reward={s.reward}, status={s.status}")
+
+Render in a notebook
+env.render(mode="ipython", width=1200, height=800)
+
+Or dump a replay JSON for the visualizer / offline analysis
+import json
+with open("replay.json", "w") as f:
+json.dump(env.toJSON(), f)
+Three built-in agents are available by name: "pass", "random", and "starter" (a deterministic baseline).
+
+Set Up the Kaggle CLI
+Install the CLI:
+
+pip install kaggle
+You'll need a Kaggle account — sign up at https://www.kaggle.com if you don't have one. Then download your API credentials at https://www.kaggle.com/settings/api by clicking "Generate New Token" under the "API" section.
+
+Recommended: API token file. Save the token string to ~/.kaggle/access_token:
+
+mkdir -p ~/.kaggle
+
+Paste the token from the Kaggle settings UI into this file
+nano ~/.kaggle/access_token
+chmod 600 ~/.kaggle/access_token
+Alternative auth methods:
+
+OAuth (browser flow): kaggle auth login
+Environment variable: export KAGGLE_API_TOKEN=xxxxxxxxxxxxxx
+Verify the CLI is wired up:
+
+kaggle competitions list -s "kaggriculture"
+Find the Competition
+kaggle competitions list -s "kaggriculture"
+kaggle competitions pages kaggriculture
+kaggle competitions pages kaggriculture --content
+Accept the Competition Rules
+Before submitting, you must accept the rules on the Kaggle website. Navigate to https://www.kaggle.com/competitions/kaggriculture and click "Join Competition".
+
+Verify you've joined:
+
+kaggle competitions list --group entered
+Download Competition Data
+kaggle competitions download kaggriculture -p kaggriculture-data
+Submit Your Agent
+Your submission must have a main.py at the root with an agent function.
+
+Single file agent:
+
+kaggle competitions submit kaggriculture -f main.py -m "Wheat loop v1"
+Multi-file agent — bundle into a tar.gz with main.py at the root:
+
+tar -czf submission.tar.gz main.py helper.py model_weights.pkl
+kaggle competitions submit kaggriculture -f submission.tar.gz -m "Multi-file agent v1"
+Notebook submission:
+
+kaggle competitions submit kaggriculture -k YOUR_USERNAME/kaggriculture-agent -f submission.tar.gz -v 1 -m "Notebook agent v1"
+Monitor Your Submission
+Check submission status:
+
+kaggle competitions submissions kaggriculture
+Note the submission ID from the output — you'll need it for episodes.
+
+List Episodes
+Once your submission has played some games:
+
+kaggle competitions episodes <SUBMISSION_ID>
+CSV output for scripting:
+
+kaggle competitions episodes <SUBMISSION_ID> -v
+Download Replays and Logs
+Download the replay JSON for an episode (for visualization or analysis):
+
+kaggle competitions replay <EPISODE_ID>
+kaggle competitions replay <EPISODE_ID> -p ./replays
+Download agent logs to debug your agent's behavior:
+
+Logs for the first agent (index 0)
+kaggle competitions logs <EPISODE_ID> 0
+
+Logs for the second agent (index 1)
+kaggle competitions logs <EPISODE_ID> 1 -p ./logs
+Check the Leaderboard
+kaggle competitions leaderboard kaggriculture -s
+Typical Workflow
+
+Test locally
+python -c "
+from kaggle_environments import make
+env = make('kaggriculture', debug=True)
+env.run(['main.py', 'random'])
+print([(i, s.reward) for i, s in enumerate(env.steps[-1])])
+"
+
+Submit
+kaggle competitions submit kaggriculture -f main.py -m "v1"
+
+Check status
+kaggle competitions submissions kaggriculture
+
+Review episodes
+kaggle competitions episodes <SUBMISSION_ID>
+
+Download replay and logs
+kaggle competitions replay <EPISODE_ID>
+kaggle competitions logs <EPISODE_ID> 0
+
+Check leaderboard
+kaggle competitions leaderboard kaggriculture -s
+Quick Start Agent
+Below is a simple starter agent implementing a basic wheat loop:
+
+def agent(obs):
+player = obs["player"]
+me = obs["farms"][player]
+private = obs["private"]
+fx, fy = me["farmer"]
+tile = me["tiles"][fy][fx]
+
+market = []
+
+# Buy a wheat seed if we have none and have enough money
+if private["seeds"].get("WHEAT", 0) == 0 and me["money"] >= 10:
+    market.append(["BUY_SEED", "WHEAT", 1])
+
+# Sell any wheat sitting in the shed
+wheat_in_shed = private["shed"].get("WHEAT", 0)
+if wheat_in_shed > 0:
+    market.append(["SELL", "WHEAT", wheat_in_shed])
+
+# If standing on an empty tile, plant wheat
+if tile is None and private["seeds"].get("WHEAT", 0) > 0:
+    return {"farmer": ["PLANT", "WHEAT"], "hands": [], "market": market}
+
+# If standing on a plant, manage watering and harvesting
+if isinstance(tile, dict) and tile.get("kind") == "PLANT":
+    crop_age = obs["day"] - tile["planted_day"]
+    if crop_age >= 2:  # Wheat first_yield_day = 2
+        return {"farmer": ["HARVEST"], "hands": [], "market": market}
+    if not tile["watered_today"]:
+        return {"farmer": ["WATER"], "hands": [], "market": market}
+
+return {"farmer": ["PASS"], "hands": [], "market": market}
+Frequently Asked Questions
+Submissions
+Submissions must be at most 100 MiB
+Daily submission limit 5
+Only your most recent 2 are active
+Your files will be located in /kaggle_simulations/agent/. Ensure all your file imports are set appropriately
+Submission Resources
+HDD Space: 8 GiB
+RAM: 6.5 GiB
+vCPUs: 1.6
+Submission Size Limit: 100 MiB
+For questions about the environment OS or python env, please see:
+
+Docker Image
+Citation
+Bovard Doerschuk-Tiberi, Domino Weir, and María Cruz. Kaggriculture. https://kaggle.com/competitions/kaggriculture, 2026. Kaggle.
+
+
+Close
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Monday 10:54 PM
+
+Pasted text(6).txt
+Document
+I want to participate in kaggriculture 
+
+ive attached the rules can ypu explain this deeply 
+
+
+Pasted text(7).txt
+Document
+Overview of the project 
+
+No. You do not have to submit every day.
+
+The rule is:
+
+You may submit up to 5 agents per day. 
+
+
+Think of it as a maximum, not a requirement.
+
+Example 1 — Good approach
+Week 1
+Monday
+No submission
+(learning the game)
+
+Tuesday
+No submission
+(building baseline)
+
+Wednesday
+1 submission
+
+Thursday
+No submission
+
+Friday
+2 submissions
+Perfectly fine.
+
+Example 2 — Also allowed
+Monday
+5 submissions
+
+Tuesday
+0
+
+Wednesday
+0
+
+Thursday
+3
+
+Friday
+1
+Also completely valid.
+
+Why is there a limit?
+Imagine someone writes a script that submits:
+
+Model 1
+
+Model 2
+
+Model 3
+
+...
+
+Model 500
+
+That would overload the competition infrastructure and let people brute-force thousands of tiny variations.
+
+The 5-per-day limit encourages thoughtful experiments instead of endless submissions.
+
+Another important detail
+The overview also says:
+
+Only your latest 2 submissions are actively tracked and used for the final leaderboard. 
+
+
+So imagine:
+
+Day 1
+Bot A
+
+Day 2
+Bot B
+
+Day 3
+Bot C
+Now your active bots are:
+
+Bot B
+
+Bot C
+
+Bot A is no longer active for matchmaking.
+
+This means you don't want to submit a new version every time you change one line of code.
+
+What I recommend for us
+Since this is your first competition, I'd avoid chasing the leaderboard early.
+
+Week 1
+0–1 submissions
+
+Understand the environment
+
+Build a legal baseline agent
+
+Week 2
+2–3 submissions
+
+Try different strategies
+
+After that
+Submit only when you have a meaningful improvement to test.
+
+That way, each submission teaches us something.
+
+One thing I want us to adopt
+Instead of thinking:
+
+"I have 5 submissions today."
+
+We'll think:
+
+"Do I have a hypothesis worth testing?"
+
+For example:
+
+Hypothesis 1: Buying land earlier increases long-term profit.
+
+Hypothesis 2: Geese outperform wheat in the early game.
+
+Hypothesis 3: Delaying sales until prices recover yields more money.
+
+If the answer is "yes," we submit.
+
+If the answer is "no," we keep experimenting locally.
+
+That's how strong Kaggle competitors use their submission quota efficiently.
+
+
+
+Pasted text(8).txt
+Document
+
+Pasted text (2).txt
+Document
+of the overview im still slightly confused about the decision making process , the hypothesis 
+how much i will get 
+what will happen if we simulate this  ( i want a simulation pattern)
+how we can learn which hypthesis is working 
+how can i learn and know what action gives the most output so that i can decide my opprotunity cost
+what strategies i can use 
+What is animals for 
+
+
+explain each concept very clerly  like this 
+Melon's bonus window is ages 6–12, but base 1 plus one unit per watered day reaches the cap of 6 at age 10, so ages 11–12 add nothing. Fertilizing reaches the cap at age 8.
+Wheat and Carrot only reach their listed Max Yield of 6 and 4 with fertilizer; watering alone peaks at 4 and 3.
+Tomato and Strawberry are ongoing but not indefinite: production is capped at 4 scheduled yields (tomato at ages 8–11, strawberry at ages 10, 12, 14, 16), after which the plant decays into a weed.
+All plants must be watered every day. They will turn into weeds if they are not watered for two successive days. All animals must be fed every day using wheat. They will escape and be unrecoverable if they are not fed for two successive days. Wheat is also available to buy at the market and can be purchased at the current market price.
+
+
+more information attached 
+
+explain me evrything 
+
+This is exactly the right question.
+
+And I think we're about to do something much more valuable than just "participate in Kaggle."
+
+Looking at your questions, I realized something:
+
+You are not confused about the rules.
+
+You don't yet have the mental model of how the game works.
+
+Once that mental model clicks, everything else—hypotheses, opportunity cost, strategies, experiments—will make sense.
+
+I don't want to answer this in one chat.
+Honestly, I think that would hurt your learning.
+
+Why?
+
+Because between the official overview and the "Complete Getting Started Guide" you uploaded, there's well over 100 pages of concepts, formulas, mechanics, and strategy. 
+
+ 
+
+
+If I dump all of that into one response, you'll remember maybe 10%.
+
+Instead, I want to teach this like a university course.
+We'll build your understanding layer by layer.
+
+Module 1 — The World (Simulation)
+We'll answer questions like:
+
+What actually happens every turn?
+
+What happens every day?
+
+What does the game engine do?
+
+What information does my agent receive?
+
+What is a decision?
+
+What is an action?
+
+What is a state?
+
+Why are there 720 turns?
+
+Why does ordering of actions matter?
+
+We'll literally simulate a game turn by turn.
+
+Module 2 — Economics
+We'll understand:
+
+ROI
+
+Opportunity cost
+
+Cash flow
+
+Investment
+
+Capital
+
+Compounding
+
+Short-term vs long-term
+
+Example
+
+Should I buy
+
+Wheat
+
+Goose
+
+Cow
+
+Land
+
+We'll calculate everything ourselves.
+
+Module 3 — Crops
+Every crop
+
+We'll answer
+
+Why does it exist?
+
+When should I use it?
+
+When is it terrible?
+
+Expected profit
+
+Risk
+
+Time value
+
+Water cost
+
+Fertilizer value
+
+Market behavior
+
+We'll simulate
+
+One wheat
+
+↓
+
+One carrot
+
+↓
+
+One tomato
+
+↓
+
+etc.
+
+Module 4 — Animals
+Exactly like crops.
+
+We'll answer
+
+Why would anyone buy a goose?
+
+Why not only melons?
+
+Why cows?
+
+Why sheep?
+
+We'll calculate
+
+Daily ROI
+
+Payback period
+
+Expected lifetime value
+
+Action cost
+
+Feed cost
+
+Opportunity cost
+
+Module 5 — Dynamic Market
+This is probably the hardest topic.
+
+We'll simulate
+
+Only
+
+One product.
+
+One player.
+
+Then
+
+Two players.
+
+Then
+
+Town demand.
+
+You'll literally see the price moving.
+
+Module 6 — Decision Making
+This is where hypotheses come from.
+
+For example
+
+Hypothesis
+
+"Buying land before Day 8 produces higher total income."
+
+We'll test it.
+
+Module 7 — Strategy
+Only after understanding everything.
+
+We'll compare
+
+Wheat Rush
+
+Goose Economy
+
+Animal Empire
+
+Expansion First
+
+High Value Crops
+
+Market Manipulation
+
+Hybrid Strategies
+
+Module 8 — AI Agent
+Finally
+
+We'll design
+
+A real AI agent.
+
+Your questions deserve simulations
+You asked:
+
+what happens if we simulate this?
+
+Exactly.
+
+That's how I want to teach it.
+
+For example
+
+Instead of saying
+
+"Wheat costs $10"
+
+We'll do this
+
+Day 0
+
+Money = 3000
+
+↓
+
+Buy Wheat Seed
+
+Money = 2990
+
+↓
+
+Plant
+
+↓
+
+Water
+
+↓
+
+Day 1
+
+Nothing
+
+↓
+
+Water
+
+↓
+
+Day 2
+
+Harvest = 2 Wheat
+
+↓
+
+Sell
+
+↓
+
+Money = ?
+We'll compute every number.
+
+Then
+
+We'll compare
+
+Scenario A
+
+Buy Wheat
+
+↓
+
+Final Money
+
+3050
+versus
+
+Scenario B
+
+Buy Goose
+
+↓
+
+Final Money
+
+3020
+Now
+
+You'll understand
+
+why.
+
+Hypothesis
+This deserves its own lesson.
+
+Think of a hypothesis like
+
+"I believe this decision will produce more money."
+
+Example
+
+Current strategy
+
+Buy Goose
+
+↓
+
+Day 2
+Hypothesis
+
+Buying Goose on Day 5 instead will earn more.
+
+How do we know?
+
+We test.
+
+Exactly like science.
+
+Opportunity Cost
+You asked
+
+How do I know what action gives the most output?
+
+This is actually the central question of the whole competition.
+
+Every turn
+
+You have one action.
+
+Suppose
+
+Action A
+
+Water Wheat
+or
+
+Action B
+
+Collect Fertilizer
+Only one.
+
+Which?
+
+We calculate
+
+Expected value.
+
+Later
+
+We'll literally make a table
+
+Action	Expected Future Profit
+Water Wheat	$40
+Harvest Goose	$100
+Care Cow	$250
+Buy Land	$700 later
+Then
+
+Your AI simply chooses the highest value.
+
+This is actually AI.
+Notice something.
+
+We're not writing
+
+if crop:
+    water()
+We're writing
+
+Current State
+
+↓
+
+Estimate Future Reward
+
+↓
+
+Choose Best Action
+That is exactly how modern planning agents work.
+
+Here's how I'd like to run this
+Instead of a giant explanation, we'll do a Masterclass.
+
+I want to write it like a textbook with simulations, diagrams, quizzes, and exercises.
+
+Something like:
+
+Lesson 1: How one game turn works (with a complete simulation).
+
+Lesson 2: Understanding every crop through worked examples.
+
+Lesson 3: Animals, CARE, fertilizer, and why they exist.
+
+Lesson 4: Market dynamics and pricing.
+
+Lesson 5: Opportunity cost and hypothesis-driven experimentation.
+
+Lesson 6: Building increasingly sophisticated strategies.
+
+Lesson 7: Designing an AI agent from first principles.
+
+By the end, you won't just know the rules—you'll understand why they exist and how they interact.
+
+I genuinely think this could become one of the best learning resources on Kaggriculture, and something you could even publish as part of your AI learning journey.
+
+
+Yesterday 4:17 PM
+So write Lesson 1
+then i will ask questions 
+and you will answer and then once i understood i will say done then you will create a detailed document of lesson 1
+
+you start now
+
+I absolutely love this approach.
+
+We're not going to memorize rules.
+
+We're going to understand the world.
+
+From now on, imagine I'm your professor teaching "AI Decision Making through Kaggriculture."
+
+Ground Rule
+
+Don't try to remember anything.
+
+Just understand.
+
+If something is even 1% confusing, stop me.
+
+We'll discuss it.
+
+Only after you say "Done" will I write the polished Lesson 1 document.
+
+LESSON 1 — Understanding the World
+Chapter 1 — What is Kaggriculture?
+Forget farming.
+
+Seriously.
+
+If you think this is a farming game, you'll misunderstand everything.
+
+This is actually a game about making decisions.
+
+The farm is simply the environment where those decisions happen. 
+
+
+Imagine this instead.
+
+Suppose I give you
+
+₹3000
+and say
+
+"Make as much money as possible in the next 30 days."
+
+You have choices.
+
+You could
+
+buy a shop
+
+invest in stocks
+
+buy a taxi
+
+start a bakery
+
+Every choice changes what happens next.
+
+Kaggriculture is exactly the same.
+
+Instead of buying a bakery,
+
+you buy
+
+Seeds
+Animals
+Land
+Workers
+Those are simply different investments.
+
+Chapter 2 — What is your objective?
+This is the simplest rule in the game.
+
+At the end of the season,
+
+the player with the most money in the bank wins. Unsold items don't count until they are sold. 
+
+
+Not
+
+Most crops.
+
+Not
+
+Most animals.
+
+Not
+
+Largest farm.
+
+Only
+
+Money
+Example
+
+Player A
+
+₹90,000 Cash
+Player B
+
+₹80,000 Cash
+
++
+
+100 Melons
+Player A wins.
+
+Why?
+
+Because the melons haven't been converted into money.
+
+Real-life example
+Suppose you own
+
+20 iPhones
+Worth
+
+₹20 lakh
+
+But
+
+You haven't sold them.
+
+Your bank account still says
+
+₹50,000
+
+Meanwhile
+
+Someone else has
+
+₹5 lakh cash.
+
+Who has more money?
+
+The second person.
+
+Assets are not cash.
+
+Exactly the same here.
+
+Chapter 3 — Time
+Now comes the first important concept.
+
+The game lasts
+
+30 Days
+Every day has
+
+24 Turns
+Total
+
+30 × 24
+
+=
+
+720 Turns
+
+
+What is a turn?
+Think of Monopoly.
+
+Every player rolls.
+
+Moves.
+
+Next player.
+
+That's one turn.
+
+Here
+
+One turn means
+
+Your agent can decide what to do.
+
+Example
+
+Turn 1
+
+Buy Wheat Seed
+Turn 2
+
+Move East
+Turn 3
+
+Plant Wheat
+Turn 4
+
+Water Wheat
+Each decision consumes a turn.
+
+Analogy
+Think of a day.
+
+You wake up.
+
+8 AM
+
+↓
+
+Brush
+
+↓
+
+Breakfast
+
+↓
+
+Office
+
+↓
+
+Lunch
+
+↓
+
+Meeting
+
+↓
+
+Dinner
+
+↓
+
+Sleep
+Each activity takes time.
+
+You can't do everything at once.
+
+The same thing happens here.
+
+Chapter 4 — The Most Important Idea
+Every turn is precious.
+This is probably the most important sentence in Lesson 1.
+
+Imagine you have
+
+720 Coins
+Instead of turns.
+
+Every action costs
+
+1 Coin
+If you waste
+
+100 Turns
+You've burned
+
+100 Coins
+without earning anything.
+
+Example
+
+Imagine
+
+Turn
+
+PASS
+Nothing happens.
+
+That turn is gone forever.
+
+You never get it back.
+
+Real life example
+
+Imagine
+
+Today
+
+You spend
+
+6 hours
+
+watching random YouTube.
+
+Tomorrow
+
+Can you recover those six hours?
+
+No.
+
+Exactly the same.
+
+Chapter 5 — State
+Now we're entering AI.
+
+Every turn,
+
+the world has a condition.
+
+That condition is called
+
+State.
+
+Example
+
+Imagine you're playing chess.
+
+Board
+
+♔
+
+♕
+
+♖
+
+♙
+That arrangement of pieces
+
+is called
+
+the current state.
+
+Here
+
+The state contains
+
+Your money
+
+₹2750
+Your crops
+
+5 Wheat
+
+3 Tomatoes
+Your animals
+
+2 Cows
+Current market prices
+
+Milk
+
+₹180
+
+Egg
+
+₹55
+Day
+
+12
+Hour
+
+7
+Everything together
+
+=
+
+Current State. 
+
+
+Example
+Suppose
+
+State A
+
+Money
+
+3000
+
+No crops
+Should you buy
+
+Melon?
+
+Probably yes.
+
+State B
+
+Money
+
+100
+
+25 Melons already planted
+Should you buy Melon?
+
+Probably no.
+
+Notice
+
+Same action.
+
+Different state.
+
+Different answer.
+
+This is why
+
+there is no
+
+Always buy Melons.
+rule.
+
+Chapter 6 — Action
+Now
+
+You observe the state.
+
+Then
+
+You choose
+
+an action.
+
+Example
+
+Current State
+
+↓
+
+Choose
+
+Water
+Game changes
+
+↓
+
+New State
+
+Current State
+
+↓
+
+Choose
+
+Harvest
+↓
+
+New State
+
+Current State
+
+↓
+
+Choose
+
+Buy Goose
+↓
+
+New State
+
+Every action changes the future.
+
+Apple Example
+Imagine
+
+Current State
+
+You have
+
+₹100
+Action
+
+Buy Apple
+
+₹20
+New State
+
+Money
+
+₹80
+
+Apple
+
+1
+See what happened?
+
+The action
+
+transformed
+
+the state.
+
+Chapter 7 — Decision
+Now comes the heart of AI.
+
+Suppose
+
+Current State
+
+Money
+
+300
+Choices
+
+Buy Wheat
+
+Buy Goose
+
+Buy Land
+
+Hire Worker
+You can only choose
+
+one.
+
+That's called
+
+a Decision.
+
+Notice something.
+
+The game never tells you
+
+which decision is correct.
+
+It simply lets you choose.
+
+Then
+
+you live with the consequences.
+
+Real-life analogy
+You graduate.
+
+You have
+
+three offers.
+
+Google
+
+Startup
+
+MBA
+Nobody tells you
+
+the correct answer.
+
+You choose.
+
+Five years later
+
+you discover
+
+whether it was good.
+
+Kaggriculture works exactly like this.
+
+Chapter 8 — Decision Chain
+Here's where beginners usually have an "aha" moment.
+
+One decision
+
+doesn't affect
+
+one turn.
+
+It affects
+
+many future turns.
+
+Example
+
+Today
+
+Buy Goose
+
+↓
+
+Tomorrow
+
+Feed Goose
+
+↓
+
+Day 4
+
+Collect Egg
+
+↓
+
+Sell Egg
+
+↓
+
+Earn Money
+
+↓
+
+Buy Cow
+
+↓
+
+Milk
+
+↓
+
+Buy Land
+
+↓
+
+Hire Worker
+
+↓
+
+More Production
+
+↓
+
+More Money
+
+One decision started an entire chain.
+
+Example using apples
+Suppose
+
+Today
+
+You buy
+
+One Apple Tree
+Tomorrow
+
+Nothing.
+
+Day 30
+
+Apples.
+
+Sell.
+
+Money.
+
+Buy
+
+two trees.
+
+Now
+
+those two trees
+
+produce more apples.
+
+See?
+
+One decision
+
+changed the next month.
+
+The Big Formula
+Every turn follows exactly the same pattern.
+
+Observe State
+
+↓
+
+Think
+
+↓
+
+Choose Action
+
+↓
+
+Environment Changes
+
+↓
+
+New State
+
+↓
+
+Repeat
+
+720 Times
+This loop is the foundation of AI agents, reinforcement learning, and decision-making systems. Kaggriculture exposes your agent to a state each turn, your agent returns actions, the environment updates, and the cycle repeats until the season ends. 
+
+
+Homework (Don't answer now—just think)
+Imagine it's Day 1, Turn 1.
+
+You have:
+
+₹3000
+
+Empty farm
+
+No crops
+
+No animals
+
+No workers
+
+Without worrying about whether it's optimal, answer these questions in your head:
+
+What is the current state?
+
+What actions are available to you?
+
+Why is choosing one action automatically giving up all the others for that turn?
+
+If you buy a goose today, can that single decision affect Day 20?
+
+If you can explain those four questions in your own words, you've understood the core loop of the entire competition.
+
+Don't say "Done" yet. 😊
+
+Now become the student. Ask me every question that came to your mind while reading Lesson 1—no matter how basic or detailed. The stronger this foundation becomes, the easier every later lesson (economics, strategies, and AI agents) will feel.
+
+
+Today 8:19 PM
+Les go to next lesson
+
+Perfect. Now that you understand the world, we move to the question every top Kaggle competitor asks:
+
+"How do I decide what to do next?"
+
+This lesson is about thinking, not coding.
+
+LESSON 2 — Decision Making & Opportunity Cost
+Chapter 1 — Every Turn Is a Choice
+Imagine it's your turn.
+
+Your current state is:
+
+Money = ₹3000
+Empty Farm
+Day = 1
+Turn = 1
+What can you do?
+
+Buy wheat seeds
+
+Buy carrot seeds
+
+Buy a goose
+
+Buy a cow
+
+Buy fertilizer
+
+Hire a worker
+
+Buy land
+
+Move
+
+PASS
+
+You cannot do all of them.
+
+You must choose.
+
+This is called a decision.
+
+Example: Choosing Dinner
+Imagine you have ₹500.
+
+You can buy:
+
+Pizza = ₹500
+
+OR
+
+Burger = ₹500
+You cannot buy both.
+
+Choosing pizza means giving up the burger.
+
+That "thing you gave up" is called opportunity cost.
+
+Chapter 2 — What is Opportunity Cost?
+Opportunity cost is the value of the best option you didn't choose.
+
+Example:
+
+You have ₹300.
+
+Option A:
+
+Buy Goose
+Option B:
+
+Buy Wheat Seeds
+You buy the goose.
+
+The opportunity cost is:
+
+"What profit could I have made from wheat instead?"
+
+Notice:
+
+It's not the cost of the goose.
+
+It's the missed opportunity.
+
+Apple Example
+Suppose:
+
+₹100
+Choice 1:
+
+Buy an Apple.
+
+Choice 2:
+
+Buy a Book.
+
+You buy the apple.
+
+Tomorrow you realize the book would have helped you earn ₹1000.
+
+The opportunity cost wasn't ₹100.
+
+It was the ₹1000 future benefit you missed.
+
+Chapter 3 — Decisions Are About the Future
+Beginners ask:
+
+"What gives me the most money today?"
+
+Experts ask:
+
+"What gives me the most money by Day 30?"
+
+These are different questions.
+
+Example
+Option A
+
+Sell Wheat Today
+
++₹200
+Option B
+
+Keep Wheat
+
+Feed Cow
+
+Cow Produces Milk
+
+Milk Sells Later
+
++₹800
+Today:
+
+Option A looks better.
+
+End of season:
+
+Option B wins.
+
+Chapter 4 — What is a Strategy?
+A strategy is a long-term plan, not a single action.
+
+Think of chess.
+
+Moving one pawn is not a strategy.
+
+Controlling the center is.
+
+Similarly:
+
+Buying one wheat seed is not a strategy.
+
+Strategy Examples
+Strategy A — Wheat Economy
+
+Buy Wheat
+
+↓
+
+Harvest Quickly
+
+↓
+
+Sell
+
+↓
+
+Repeat
+Goal:
+
+Fast cash flow.
+
+Strategy B — Animal Economy
+
+Buy Goose
+
+↓
+
+Feed Daily
+
+↓
+
+Collect Eggs
+
+↓
+
+Sell Eggs
+
+↓
+
+Buy More Animals
+Goal:
+
+Continuous income.
+
+Strategy C — Expansion
+
+Save Money
+
+↓
+
+Buy More Land
+
+↓
+
+Grow More Crops
+Goal:
+
+Bigger production later.
+
+Notice:
+
+A strategy is made of many decisions.
+
+Chapter 5 — What is a Hypothesis?
+This is the most important concept in Kaggle.
+
+A hypothesis is simply:
+
+"I believe doing X will produce a better result than doing Y."
+
+It is not a fact.
+
+It is something you test.
+
+Example
+Current strategy:
+
+Buy Wheat on Day 1.
+New idea:
+
+Buy Goose on Day 1.
+Hypothesis:
+
+"Buying a goose first will produce more money by Day 30."
+
+Is it true?
+
+We don't know.
+
+So we test it.
+
+Chapter 6 — How Do We Test a Hypothesis?
+This is where simulation comes in.
+
+Imagine these two experiments.
+
+Experiment A
+Start Money = ₹3000
+
+↓
+
+Buy Wheat
+
+↓
+
+Play 30 Days
+
+↓
+
+Final Money = ₹8,200
+Experiment B
+Start Money = ₹3000
+
+↓
+
+Buy Goose
+
+↓
+
+Play 30 Days
+
+↓
+
+Final Money = ₹9,100
+Result:
+
+Goose wins.
+
+Does that prove goose is always better?
+
+No.
+
+Maybe that was against one opponent.
+
+Maybe prices changed.
+
+So we run more experiments.
+
+Chapter 7 — Think Like a Scientist
+Every experiment follows this pattern.
+
+Step 1
+Question
+
+"Is Goose better than Wheat?"
+
+Step 2
+Hypothesis
+
+Goose earns more money.
+
+Step 3
+Experiment
+
+Run 20 games.
+
+Step 4
+Observe
+
+Average Money
+
+Goose = ₹9,000
+
+Wheat = ₹8,200
+Step 5
+Conclusion
+
+Current evidence supports Goose.
+
+Not forever.
+
+Just with the current environment.
+
+Chapter 8 — Why One Game Is Not Enough
+Imagine tossing a coin.
+
+One toss:
+
+Heads
+Can you conclude:
+
+"This coin always lands on heads."
+
+No.
+
+Now toss 1000 times.
+
+You'll get a much better estimate.
+
+The same applies here.
+
+One game can be lucky.
+
+Twenty games are more reliable.
+
+One hundred games are even better.
+
+Chapter 9 — Measuring Decisions
+Every action should answer one question:
+
+Did this increase my final money?
+
+Example:
+
+Hypothesis:
+
+Water Melons Every Day
+Experiment:
+
+20 games.
+
+Average Money:
+
+₹10,200
+
+New Hypothesis:
+
+Use Fertilizer on Melons
+20 games.
+
+Average Money:
+
+₹11,300
+
+Now you have evidence that the second approach is better under those conditions.
+
+Chapter 10 — Building an Experiment Log
+Professional ML engineers never rely on memory.
+
+They record every experiment.
+
+Example:
+
+Experiment	Change	Average Money	Win Rate	Conclusion
+E1	Wheat only	₹8,200	42%	Baseline
+E2	Goose first	₹9,100	55%	Better
+E3	Goose + Care	₹10,400	68%	Better
+E4	Early Land	₹8,900	50%	Worse than E3
+This becomes your knowledge base.
+
+The Mental Model
+Every strong Kaggriculture player repeats this loop:
+
+Observe
+
+↓
+
+Think
+
+↓
+
+Create Hypothesis
+
+↓
+
+Run Experiment
+
+↓
+
+Measure Results
+
+↓
+
+Learn
+
+↓
+
+Improve Strategy
+
+↓
+
+Repeat
+This is exactly how top Kaggle competitors, product teams, and ML researchers improve systems—through evidence, not guesses.
+
+One Important Clarification
+You asked:
+
+"How can I know what action gives the most output?"
+
+The answer is:
+
+You don't know at the beginning.
+
+You estimate.
+
+Then you test.
+
+Then you measure.
+
+Over time, your agent becomes smarter because you've built evidence about what works.
+
+Homework
+Imagine you have ₹3000 on Day 1.
+
+Create three hypotheses. For example:
+
+"Buying a goose first earns more than buying wheat first."
+
+"Buying land before Day 10 increases end-of-game money."
+
+"Selling eggs immediately is better than storing them."
+
+Don't worry about whether they're correct.
+
+The goal is to practice thinking like an experimenter rather than guessing.
+
+Lesson 3 will be where the game really comes alive.
+
+We'll build an economic model for every crop and every animal:
+
+Why each exists.
+
+When to use it.
+
+When not to use it.
+
+ROI, payback period, action cost, and hidden costs.
+
+Why two crops with similar prices can require completely different strategies.
+
+That's where you'll start thinking like someone designing a winning agent rather than just playing the game.
+
+
+🌾 Kaggriculture: The Complete Getting-Started Guide
+Author: Sidhaarth Shree
+
+Everything you need to know to go from zero to a working, submitted agent.
+
+Kaggriculture is a two-player, turn-based farming simulation. You and one opponent each manage a private farm for a 30-day season = 720 turns. You plant, water, harvest, raise animals, hire labour and sell into a shared, price-reactive market. Whoever has the most coins in the bank on turn 720 wins.
+
+The single most important sentence on this page: the market is shared and prices fall as you sell. This is not a farming game, it is a market-depth game with a farming interface. Nearly every ranking point comes from understanding how much a product is worth at the margin, not from growing more stuff.
+
+What this notebook covers
+
+Section Why you care
+1 Setup & your first episode Get a game running in 2 minutes
+2 The rules, precisely The docs are dense; here they are as tables + code
+3 The observation & action API Copy-paste reference with a decoder
+4 Crop economics, computed Which crops actually make money per tile-day
+5 Animal economics & the CARE trick The highest-ROI mechanic in the game
+6 The market price function Reimplemented, plotted, and inverted
+7 Town demand How the town moves prices while you sleep
+8 Labour: the Fibonacci hiring curve Labour is nearly free... until it isn't
+9 The action budget The real constraint on your farm size
+10 A first agent that actually works Beats starter/random comfortably
+11 Local testing harness Run 20 games, get a win-rate, not a vibe
+12 Submitting + pitfalls The 9 mistakes that error out submissions
+
+Setup & your first episode
+The environment ships inside kaggle-environments. One pip install and you have the whole simulator locally — no Kaggle account needed to play, only to submit.
+
+%pip install -q -U kaggle-environments
+import kaggle_environments
+print("kaggle-environments", kaggle_environments.version)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.1/41.1 kB 882.6 kB/s eta 0:00:000:01
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 MB 24.0 MB/s eta 0:00:0000:0100:01
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.0/16.0 MB 44.9 MB/s eta 0:00:0000:0100:01
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.3/26.3 MB 39.7 MB/s eta 0:00:0000:0100:01
+Note: you may need to restart the kernel to use updated packages.
+[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: Successfully loaded OpenSpiel environments: 41.
+[kaggle_environments.envs.open_spiel_env.open_spiel_env] INFO: OpenSpiel games skipped: 0.
+kaggle-environments <function version at 0x7ea070fe5e40>
+from kaggle_environments import make
+
+env = make("kaggriculture", configuration={"episodeSteps": 720}, debug=True)
+print("configuration:")
+for k, v in env.configuration.items():
+print(f" {k:26} = {v}")
+configuration:
+episodeSteps = 720
+actTimeout = 1
+runTimeout = 1200
+boardSize = 10
+startingMoney = 3000
+maxMarketOrdersPerTurn = 10
+turnsPerDay = 24
+shedCapacity = 100
+weedSpawnChance = 0.005
+townShopUnlockInterval = 3
+townShopSellInterval = 4
+townCenterSellInterval = 12
+farmHandCostMult = 1
+marketParams = {}
+seed = None
+Three built-in opponents
+Name Behaviour
+"pass" Does nothing. Finishes with exactly startingMoney. Sanity check only.
+"random" Uniform random legal-ish actions. Usually loses money.
+"starter" Deterministic wheat-loop baseline. This is your real floor — if you can't beat it 100%, don't submit.
+A useful mental scale for final bank balances:
+
+Bank at turn 720 What it means
+$3,000 you did nothing (pass)
+~$3–8k naive single-crop loop (starter)
+$20–40k competent crop rotation + a few hands
+$80–150k land bought, animals running, labour scaled
+$250k+ market-aware selling + full action-budget utilisation
+env.run(["starter", "random"])
+final = env.steps[-1]
+for i, s in enumerate(final):
+print(f"Player {i}: reward={s['reward']}, status={s['status']}")
+Player 0: reward=3514.0, status=DONE
+Player 1: reward=0.0, status=DONE
+Render it. The visualiser shows both farms, the market ticker and the town.
+
+⚠️ This is the one cell in the notebook that can misbehave. Read the comment inside it before you run it twice — and if you get an empty box, the next cell has two fallbacks that always work.
+
+#Will Work Only in Runtime
+from IPython.display import HTML, IFrame
+import html as _html
+
+def show_replay(env, width=1000, height=720, mode="file", path="replays.html"):
+"""Render an episode's visualiser inline. mode="file" (light) or "srcdoc" (heavy)."""
+doc = env.render(mode="html", width=width, height=height)
+
+if mode == "file":
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(doc)
+    print(f"wrote {path}  ({len(doc)/1024/1024:.1f} MB, kept OUT of the notebook)")
+    return IFrame(src=path, width=width, height=height)
+
+return HTML(
+    f'<iframe srcdoc="{_html.escape(doc, quote=True)}" '
+    f'width="{width}" height="{height}" frameborder="0" '
+    f'style="border:1px solid #ddd;border-radius:8px"></iframe>'
+)
+show_replay(demo)
+2. The rules, precisely
+2.1 Time
+1 season = 30 days = 720 turns turnsPerDay = 24
+day = step // 24 (0-indexed, 0..29)
+hour = step % 24 (0-indexed, 0..23)
+Everything that "resets daily" (watering, feeding, caring, hired hands, hire prices) resets at the end-of-day refresh, which runs after turn 23 of each day.
+
+2.2 Space
+Your farm is a 10 × 10 grid split into four 5 × 5 quadrants. You start owning NW only (25 tiles).
+
+x→ 0 1 2 3 4 | 5 6 7 8 9
+y 0 . . . . . | L L L L L
+1 . . . . . | L L L L L
+2 . . S . . | L L L L L S = shed (tiles indexed tiles[y][x])
+3 . . . . . | L L L L L
+4 . . . . . | L L L L L
+----------------+-----------
+5 L L L L L | L L L L L
+...
+BUY_LAND unlocks the next quadrant for $1,000 → $2,000 → $4,000 (total $7,000 for all 100 tiles).
+
+Each tile holds exactly one of: None (empty), a plant, a weed, or a coop/pasture (which may hold one animal). "LOCKED" means you haven't bought that quadrant.
+
+2.3 The shed — and where it actually is
+🔍 The shed has no coordinates in the observation, and this confuses everyone. In the source, the "shed" is the centre of the board, and you count as shed-adjacent when you stand on one of the four centre tiles:
+
+half = board_size // 2 # 5 on the default 10x10
+shed_access = [(half-1, half-1), (half, half-1), (half-1, half), (half, half)]
+
+= [(4,4), (5,4), (4,5), (5,5)]
+DROP, PICKUP and shed-PLACE work from any of those four tiles — and nowhere else.
+
+🔍 Three of those four tiles start LOCKED. Only (4,4) is inside the starting NW quadrant. The farmer spawns there, but _spawn_hand assigns hands to the least-occupied access tile in NWSE order — so your very first hired hand spawns on the LOCKED tile (5,4). A unit standing on a locked tile may only move; every other op is a silent no-op. If your agent doesn't handle this, that hand stands still for the entire game.
+
+Capacity 100 non-seed items. Seeds live in private["seeds"] and are uncapped.
+All units dump their inventories into the shed each night; anything over 100 is destroyed. This is a real, frequently fatal leak: a farm harvesting 150 units/day silently bins a third of it unless units DROP and you SELL during the day.
+SELL draws from the shed, never from carried inventory. Produce must physically reach the shed to become money.
+2.4 Care requirements — the "every other day" rule
+Plants: WATER once per day. Two consecutive missed days → the tile becomes a WEED (total loss).
+Animals: FEED once per day, consuming 1 WHEAT from the acting unit's own inventory. Two consecutive missed days → the animal escapes, unrecoverable.
+🔍 A newly planted crop starts at consecutive_unwatered = 1, not 0. The planting day counts as already-unwatered, so you must water on the same day you plant or the tile becomes a weed that very night. After that you can water every other day to survive — but see §4, watering inside the bonus window is where the yield comes from.
+
+🔍 DIG does not remove a placed animal. It clears plants, weeds, and empty coops/pastures only.
+
+2.5 The full action set
+Each unit (the farmer, and each hired hand) takes one action per turn. Separately, you may submit up to 10 market orders per turn — those are free actions, they don't consume unit turns.
+
+{
+"farmer": ["WATER"], # one op for the main farmer
+"hands": [["FEED"], ["NORTH"], ...], # one op per hired hand, in hands order
+"market": [["SELL", "EGG", 40], # ordered, max 10 per turn
+["BUY_PRODUCT", "WHEAT", 20],
+["HIRE"]],
+}
+Unit ops
+
+Op Args Requires Effect
+NORTH SOUTH EAST WEST – in-bounds, unlocked move 1 tile
+PASS – – nothing
+PLANT crop standing on empty tile, seed in stock plant it
+WATER – standing on plant mark watered today
+FERTILIZE – standing on plant, FERTILIZER in inventory doubles the daily yield bonus for 3 days
+HARVEST – on plant/animal with yield_units > 0 move produce into carried inventory
+DIG – on plant/weed/coop/pasture clear the tile
+BUILD_COOP / BUILD_PASTURE – on empty tile build the structure
+PLACE item [n] on matching empty structure → place animal; or adjacent to shed → deposit n
+PICKUP item [n] adjacent to shed shed → inventory
+DROP – adjacent to shed dump entire inventory into shed
+FEED – on occupied structure consume 1 wheat, mark fed
+CARE – on occupied structure bank a yield bonus (see §5)
+COLLECT_FERTILIZER – on animal with fertilizer_available +1 FERTILIZER to inventory
+Market ops
+
+Op Args Notes
+BUY_SEED crop, n fixed price, unlimited supply
+BUY_ANIMAL animal, n fixed price, unlimited supply, lands in the shed
+BUY_PRODUCT WHEAT | FERTILIZER, n only these two can be bought back
+SELL item, n dynamic price, draws from shed
+HIRE – one hand for today; price = fib(hires_today)
+BUY_LAND – next quadrant, $1k / $2k / $4k
+Invalid actions are silent no-ops — you burn the turn and get no error. This is the #1 source of "my agent does nothing" bugs. Validate positions yourself.
+
+🔍 The atomic-PLANT rule bites hard. From the source: if the total number of PLANT <crop> ops you issue this turn exceeds the seeds you hold, every one of them is dropped — not just the excess. Ask 8 units to plant melon while holding 6 melon seeds and you plant zero melons and burn 8 turns. Reserve seeds across units as you build the turn's action list.
+
+The observation & action API
+Here is the whole observation, annotated. Run the next cell to dump a real one from a live episode.
+
+import json
+from kaggle_environments import make
+
+env = make("kaggriculture", configuration={"episodeSteps": 48}, debug=False)
+
+CAPTURED = {}
+
+def spy(obs):
+"""An agent that records the observation it is handed, then does nothing useful."""
+if obs["step"] == 30:
+CAPTURED["obs"] = json.loads(json.dumps(obs)) # deep copy of a plain dict
+return {"farmer": ["PASS"], "hands": [], "market": []}
+
+env.run([spy, "starter"])
+obs = CAPTURED["obs"]
+
+print("top-level keys :", sorted(obs.keys()))
+print("day / hour :", obs["day"], "/", obs["hour"])
+print("my player id :", obs["player"])
+print("market prices :", obs["market"]["prices"])
+print("market inv :", obs["market"]["inventory"])
+print("unlocked shops :", obs["town"]["unlocked_shops"])
+print("my shed :", obs["private"]["shed"])
+print("my seeds :", obs["private"]["seeds"])
+print("my money :", obs["farms"][obs["player"]]["money"])
+top-level keys : ['day', 'farms', 'hour', 'market', 'player', 'private', 'remainingOverageTime', 'step', 'town']
+day / hour : 1 / 6
+my player id : 0
+market prices : {'WHEAT': 27, 'CARROT': 37, 'TOMATO': 60, 'STRAWBERRY': 135, 'MELON': 262, 'EGG': 50, 'MILK': 175, 'WOOL': 212, 'FERTILIZER': 100}
+market inv : {'WHEAT': 9997, 'CARROT': 9997, 'TOMATO': 9997, 'STRAWBERRY': 9997, 'MELON': 9997, 'EGG': 9997, 'MILK': 9997, 'WOOL': 9997, 'FERTILIZER': 10000}
+unlocked shops : []
+my shed : {'WHEAT': 0, 'CARROT': 0, 'TOMATO': 0, 'STRAWBERRY': 0, 'MELON': 0, 'EGG': 0, 'MILK': 0, 'WOOL': 0, 'FERTILIZER': 0, 'GOOSE': 0, 'COW': 0, 'SHEEP': 0}
+my seeds : {'WHEAT': 0, 'CARROT': 0, 'TOMATO': 0, 'STRAWBERRY': 0, 'MELON': 0}
+my money : 3000.0
+3.1 A reusable "read the board" helper
+Almost every agent needs the same four things: where am I, what tiles do I own, what's on them, and what is each product worth right now. Wrap it once and never think about indexing again.
+
+CROPS = ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON"]
+ANIMALS = {"GOOSE": "COOP", "COW": "PASTURE", "SHEEP": "PASTURE"}
+PRODUCE = {"GOOSE": "EGG", "COW": "MILK", "SHEEP": "WOOL"}
+
+def read_board(obs):
+"""Flatten the observation into the handful of facts an agent actually uses."""
+me = obs["farms"][obs["player"]]
+opp = obs["farms"][1 - obs["player"]]
+tiles = me["tiles"]
+n = len(tiles)
+
+owned, empty, plants, weeds, structures = [], [], [], [], []
+for y in range(n):
+    for x in range(n):
+        t = tiles[y][x]
+        if t == "LOCKED":
+            continue
+        owned.append((x, y))
+        if t is None:
+            empty.append((x, y))
+        elif t["kind"] == "PLANT":
+            plants.append((x, y, t))
+        elif t["kind"] == "WEED":
+            weeds.append((x, y))
+        else:                       # COOP / PASTURE
+            structures.append((x, y, t))
+
+return {
+    "me": me, "opp": opp, "tiles": tiles, "size": n,
+    "day": obs["day"], "hour": obs["hour"], "step": obs["step"],
+    "money": me["money"],
+    "farmer": tuple(me["farmer"]),
+    "hands": [tuple(h) for h in me["hands"]],
+    "units": [tuple(me["farmer"])] + [tuple(h) for h in me["hands"]],
+    "shed": dict(obs["private"]["shed"]),
+    "seeds": dict(obs["private"]["seeds"]),
+    "invs": [dict(i) for i in obs["private"]["inventories"]],
+    "prices": dict(obs["market"]["prices"]),
+    "minv": dict(obs["market"]["inventory"]),
+    "shops": list(obs["town"]["unlocked_shops"]),
+    "owned": owned, "empty": empty, "plants": plants,
+    "weeds": weeds, "structures": structures,
+}
+b = read_board(obs)
+print(f"day {b['day']} hour {b['hour']} money ${b['money']:.0f}")
+print(f"owned tiles {len(b['owned'])} empty {len(b['empty'])} plants {len(b['plants'])} weeds {len(b['weeds'])}")
+print(f"farmer at {b['farmer']}, {len(b['hands'])} hands")
+day 1 hour 6 money $3000
+owned tiles 25 empty 25 plants 0 weeds 0
+farmer at (4, 4), 0 hands
+3.2 Finding the shed
+The shed's coordinates are not in the observation. You infer them: the farmer and every hand spawn orthogonally adjacent to the shed at hour 0, and the shed tile itself is never a plantable tile. The robust trick is to record the farmer's hour-0 position — the shed is one of its four neighbours, and in the default 10×10 layout it sits at the centre of the starting quadrant.
+
+def infer_shed(obs, cache={}):
+"""Shed position, inferred from the hour-0 spawn and cached for the episode."""
+if "shed" in cache:
+return cache["shed"]
+me = obs["farms"][obs["player"]]
+fx, fy = me["farmer"]
+tiles = me["tiles"]
+n = len(tiles)
+# candidates: neighbours of the spawn that are not ordinary farmable tiles
+for dx, dy in ((0, -1), (0, 1), (-1, 0), (1, 0)):
+x, y = fx + dx, fy + dy
+if 0 <= x < n and 0 <= y < n and tiles[y][x] == "LOCKED":
+continue
+cache["shed"] = (fx, fy) # spawn tile is adjacent to the shed; good enough for routing
+return cache["shed"]
+
+In practice: treat the hour-0 spawn tile as "home". Distance-to-home is what routing needs,
+and being ON home means you are shed-adjacent, so DROP / PICKUP / PLACE work.
+print("home (hour-0 spawn) =", tuple(obs["farms"][obs["player"]]["farmer"]))
+home (hour-0 spawn) = (4, 4)
+4. Crop economics, computed
+The rules table gives raw numbers. What you want is coins per tile per day, because tiles and turns are the scarce resources.
+
+The yield rules, restated as formulas
+One-time crops (wheat, carrot, melon) — harvest once, tile clears.
+
+Bonus window opens on day ceil(max_yield_day / 2) after planting and runs to max_yield_day.
+Each day inside the window on which the plant is watered: +1 unit (+2 if also fertilized).
+Total is capped at max_yield.
+One day after max_yield_day the plant starts decaying: -1 unit every other turn → weed.
+Ongoing crops (tomato, strawberry) — produce on a fixed schedule.
+
+Base 1 unit per scheduled production, 2 if fertilized and watered that day.
+max_yield counts productions, not units. Tomato fires 4 times, then decays.
+import math
+import pandas as pd
+
+CROP = {
+# seed, base_price, first_yield_day, max_yield_day, max_yield, ongoing, interval
+"WHEAT": dict(seed=10, base=25, first=2, maxday=4, maxy=6, ongoing=False, every=0),
+"CARROT": dict(seed=20, base=35, first=2, maxday=3, maxy=4, ongoing=False, every=0),
+"TOMATO": dict(seed=50, base=60, first=8, maxday=0, maxy=4, ongoing=True, every=1),
+"STRAWBERRY": dict(seed=100, base=120, first=10, maxday=0, maxy=4, ongoing=True, every=2),
+"MELON": dict(seed=80, base=250, first=10, maxday=12, maxy=6, ongoing=False, every=1),
+}
+
+rows = []
+for name, c in CROP.items():
+if not c["ongoing"]:
+window = c["maxday"] - math.ceil(c["maxday"] / 2) + 1 # days of watering bonus
+units = min(c["maxy"], 1 + window) # unfertilized
+unitsF = min(c["maxy"], 1 + 2 * window) # fertilized
+cycle = c["maxday"] # plant -> harvest
+# actions: 1 plant + 1 water/day + 1 harvest
+acts = 1 + cycle + 1
+else:
+cycle = c["first"] + (c["maxy"] - 1) * c["every"] # last scheduled production
+units = c["maxy"]
+unitsF = c["maxy"] * 2
+acts = 1 + cycle + c["maxy"] # plant + daily water + harvests
+gross = units * c["base"]
+rows.append(dict(
+crop=name, seed=c["seed"], base=c["base"], cycle_days=cycle,
+units=units, units_fert=unitsF,
+gross_at_base=gross, profit=gross - c["seed"],
+per_tile_day=round((gross - c["seed"]) / cycle, 1),
+actions=acts,
+per_action=round((gross - c["seed"]) / acts, 1),
+cycles_in_30d=30 // cycle,
+))
+
+df = pd.DataFrame(rows).sort_values("per_tile_day", ascending=False)
+df
+crop seed base cycle_days units units_fert gross_at_base profit per_tile_day actions per_action cycles_in_30d
+4 MELON 80 250 12 6 6 1500 1420 118.3 14 101.4 2
+1 CARROT 20 35 3 3 4 105 85 28.3 5 17.0 10
+3 STRAWBERRY 100 120 16 4 8 480 380 23.8 21 18.1 1
+0 WHEAT 10 25 4 4 6 100 90 22.5 6 15.0 7
+2 TOMATO 50 60 11 4 8 240 190 17.3 16 11.9 2
+Reading that table
+At base prices (i.e. ignoring the market crashing) the ranking is roughly:
+
+Melon — by far the best per tile-day, but a 12-day cycle means only 2 plantings fit in a season, and melon has the most brutal glut curve in the game (see §6). It is a timing crop.
+Wheat — small numbers, but a 4-day cycle, cheap seed, cheap actions, and the price barely moves when you dump it. Wheat is your cash floor and your animal feed.
+Carrot — 3-day cycle, the fastest turnaround in the game. Great filler.
+Strawberry — Long cycle, but don't judge it on base-price coins/tile-day: see §7, it's drained by three shops plus the town centre faster than one farm can supply, so its price only rises all season. Tomato is the weaker of the two — fewer shops want it, and it only fires 4 productions ever before the tile dies.
+⚠️ The trap: per_tile_day at base price is not profit. If you plant 25 melons and sell 150 melons in one turn, the last ones sell for $1. Section 6 fixes this.
+
+Never plant what can't finish
+A crop planted on day d is worthless if d + cycle_days > 29. Hard-code the cutoffs:
+
+Crop Last safe planting day
+Carrot 26
+Wheat 25
+Tomato 18 (for all 4 productions)
+Strawberry 13
+Melon 17
+5. Animals & the CARE mechanic
+Animals are the highest-ROI structures in the game and most beginner agents ignore them entirely.
+
+5.1 The CARE loop — read this twice
+🔍 The rules page says pending_care_bonus += 2. The source says += 1. Trust the source:
+
+_daily_refresh_animals(), end of every day, in this exact order:
+if <production is due> and fed_today:
+yield_units += 1 + pending_care_bonus # bonus paid out, then...
+pending_care_bonus = 0
+if cared_today and fed_today:
+pending_care_bonus += 1 # ...banked again, ONE per day
+Because the payout happens before the banking, an animal on an interval-day cycle accumulates exactly interval days of bonus between productions:
+
+Animal Interval Yield per production Per day Docs claim
+Goose 1 day 1 + 1 = 2 eggs 2.0 3
+Cow 2 days 1 + 2 = 3 milk 1.5 5
+Sheep 3 days 1 + 3 = 4 wool 1.33 7 (capped 6)
+Still worth doing — CARE doubles a goose and triples a cow for one action a day — but it is a 2×, not the 3× the docs imply. Budget accordingly.
+
+yield_units is capped at the animal's max_held. Harvest on schedule or you throw away production.
+
+ANIMAL = {
+# cost, produce, base, first_day, every_n_days, max_held, feed_wheat_per_day
+"GOOSE": dict(cost=300, produce="EGG", base=50, first=4, every=1, max_held=4),
+"COW": dict(cost=400, produce="MILK", base=160, first=8, every=2, max_held=6),
+"SHEEP": dict(cost=500, produce="WOOL", base=200, first=6, every=3, max_held=6),
+}
+
+rows = []
+for name, a in ANIMAL.items():
+bonus = 1 * a["every"] # +1 per cared-and-fed day (SOURCE, not the docs' +2)
+per_prod = min(a["max_held"], 1 + bonus)
+per_day = per_prod / a["every"]
+gross_day = per_day * a["base"]
+# daily actions: FEED + CARE every day, HARVEST on production days
+acts_day = 2 + (1 / a["every"])
+rows.append(dict(
+animal=name, cost=a["cost"], produce=a["produce"], base=a["base"],
+first_yield_day=a["first"], every=a["every"],
+units_per_production=per_prod, units_per_day=round(per_day, 2),
+gross_per_day=round(gross_day, 0),
+actions_per_day=round(acts_day, 2),
+gross_per_action=round(gross_day / acts_day, 0),
+payback_days=round(a["cost"] / gross_day, 1),
+season_gross_if_bought_day2=round((30 - 2 - a["first"]) * gross_day, 0),
+))
+
+pd.DataFrame(rows).sort_values("gross_per_action", ascending=False)
+animal cost produce base first_yield_day every units_per_production units_per_day gross_per_day actions_per_day gross_per_action payback_days season_gross_if_bought_day2
+2 SHEEP 500 WOOL 200 6 3 4 1.33 267.0 2.33 114.0 1.9 5867.0
+1 COW 400 MILK 160 8 2 3 1.50 240.0 2.50 96.0 1.7 4800.0
+0 GOOSE 300 EGG 50 4 1 2 2.00 100.0 3.00 33.0 3.0 2400.0
+5.2 What that table is telling you
+A cow is the best animal per action: with CARE it makes 1.5 milk/day at a $160 base.
+A cared-for goose makes 2 eggs/day; eggs have a logarithmic glut curve, so their market is effectively bottomless.
+Sheep look strong per unit and wool's price holds high — but wool has the harshest glut curve in the game, so the herd size is capped by how fast the town drains it, not by your land.
+5.2b 🏆 CARE is the highest-value action on the farm
+Work out what one CARE is actually worth. It banks +1 yield per day, paid on the next production:
+
+Animal Interval Without CARE With CARE Extra per production
+Goose 1 day 1 egg 2 +1 (~$50)
+Cow 2 days 1 milk 3 +2 (~$500)
+Sheep 3 days 1 wool 4 +3 (~$700)
+A cow is therefore roughly $250 per CARE action. Nothing else on the farm is close — a crop watering is worth $20–30, and COLLECT_FERTILIZER about $70–100.
+
+This matters because task priority is where agents quietly lose money. If your scheduler ranks CARE below cheaper jobs, your units will do the cheap ones and run out of turns — and you will never see an error, just a smaller number at the end.
+
+5.2c 🔍 Fertilizer can be sold
+The rules page says fertilizer "can only be bought, not sold". It can be sold: FERTILIZER is in PRODUCTS and the SELL path accepts anything in PRODUCTS. Verify it yourself in a few turns — buy 10, sell 10, watch the shed empty and the money return.
+
+Every fed animal makes one free unit available at end of day, so COLLECT_FERTILIZER is a one-action ~$70–100 with no seed, no land and no watering.
+
+One wrinkle that changes how you sell it: nothing in the town consumes fertilizer — not the shops, not the town centre. Its price therefore only ever falls. There is no scarcity recovery to wait for.
+
+5.3 The hidden costs nobody accounts for
+Cost Amount
+Build the structure 1 action (BUILD_COOP / BUILD_PASTURE)
+Buy the animal market order, lands in the shed
+Move it to the tile PICKUP at shed (1) + walk (d) + PLACE (1)
+Feed it 1 WHEAT per animal per day, forever
+Daily service FEED + CARE + HARVEST + walking
+🔍 FEED takes the wheat from the acting unit's OWN inventory, not from the shed. This one line of source is why naive livestock builds starve: a generalist "send whoever is nearest" scheduler sends a unit that happens to be carrying carrots, the FEED is a silent no-op, and two days later the animal is gone along with its $300–500. Permanently, and with no error message.
+
+The fix is to specialise: dedicate a few units to livestock, have them keep wheat in hand, and forbid everyone else from touching an animal. Put the animals in the ring of tiles around the shed so those units' round trip is short.
+
+And note a wheat tile yields ~1 wheat/day, so an animal effectively costs two tiles — its own plus the one feeding it. (Or buy the feed; measure both, because the answer depends on whether your bottleneck is cash or unit-turns.)
+
+⚠️ A correction, and a lesson. An earlier version of this notebook told you livestock made a farm worse, with a measured table to prove it. That conclusion was wrong. Livestock is in fact the single largest revenue source in the game — what my table actually measured was my own broken feeding logic, not the value of animals. If a mechanic looks strong on paper and measures terribly, suspect your implementation before you rewrite the theory.
+
+The market price function — the heart of the game
+Every product starts with market inventory I0 = 10,000.
+
+price(inv) = base + sign · amp · f(|inv − I0|)
+sign = +1 if inv < I0 (scarcity → price rises)
+sign = −1 if inv > I0 (glut → price falls)
+amp = target · base / f(T)
+f ∈ {linear, sq, sqrt, log} (log means ln(1+x), so f(0)=0)
+Result is floored at $1 and rounded to the nearest dollar.
+
+T is a per-resource "one field's seasonal output" anchor. target says "pushing T units past I0 moves the price by target × base". Each side of the curve gets its own f and target — that's why wheat and carrot, with similar production profiles, behave completely differently.
+
+Sell orders are filled one unit at a time, priced at the pre-sell inventory. So dumping N units gives you Σ price(I0 + k) for k = 0..N−1, not N × price(I0). Let's build that.
+
+import math
+import numpy as np
+
+I0 = 10000
+
+MARKET_PARAMS = {
+# base T below_f below_t above_f above_t
+"WHEAT": dict(base=25, T=400, bf="sqrt", bt=0.80, af="log", at=0.20),
+"CARROT": dict(base=35, T=450, bf="log", bt=0.20, af="sqrt", at=0.70),
+"TOMATO": dict(base=60, T=200, bf="linear",bt=0.40, af="sqrt", at=0.60),
+"STRAWBERRY": dict(base=120, T=100, bf="sqrt", bt=0.70, af="linear", at=1.60),
+"MELON": dict(base=250, T=300, bf="log", bt=0.20, af="sq", at=3.60),
+"EGG": dict(base=50, T=332, bf="linear",bt=0.40, af="log", at=0.20),
+"MILK": dict(base=160, T=122, bf="sqrt", bt=0.60, af="linear", at=1.60),
+"WOOL": dict(base=200, T=105, bf="log", bt=0.20, af="sq", at=3.20),
+"FERTILIZER": dict(base=100, T=200, bf="linear",bt=0.40, af="linear", at=0.40),
+}
+
+F = {
+"linear": lambda x: x,
+"sq": lambda x: x * x,
+"sqrt": lambda x: math.sqrt(x),
+"log": lambda x: math.log(1.0 + x),
+"log10": lambda x: math.log10(1.0 + x),
+}
+
+def price_at(item, inv):
+"""Quoted unit price for item at market inventory inv."""
+p = MARKET_PARAMS[item]
+d = abs(inv - I0)
+if inv < I0:
+f, tgt = F[p["bf"]], p["bt"]
+sign = 1.0
+else:
+f, tgt = F[p["af"]], p["at"]
+sign = -1.0
+amp = tgt * p["base"] / f(p["T"])
+return max(1.0, round(p["base"] + sign * amp * f(d)))
+
+def sell_revenue(item, n, inv=I0):
+"""Exact coins from dumping n units in one go, starting at market inventory inv."""
+total = 0.0
+for _ in range(int(n)):
+px = price_at(item, inv)
+total += px
+if px > 1: # at the $1 floor units are bought but not added to inventory
+inv += 1
+return total, inv
+
+sanity check against the published table
+for item in MARKET_PARAMS:
+p = MARKET_PARAMS[item]
+T = p["T"]
+print(f"{item:11} P(I0-T)=${price_at(item, I0-T):>5.0f} "
+f"P(I0)=${price_at(item, I0):>5.0f} "
+f"P(I0+T)=${price_at(item, I0+T):>5.0f} "
+f"P(I0+2T)=${price_at(item, I0+2*T):>5.0f}")
+WHEAT P(I0-T)=$ 45 P(I0)=$ 25 P(I0+T)=$ 20 P(I0+2T)=$ 19
+CARROT P(I0-T)=$ 42 P(I0)=$ 35 P(I0+T)=$ 10 P(I0+2T)=$ 1
+TOMATO P(I0-T)=$ 84 P(I0)=$ 60 P(I0+T)=$ 24 P(I0+2T)=$ 9
+STRAWBERRY P(I0-T)=$ 204 P(I0)=$ 120 P(I0+T)=$ 1 P(I0+2T)=$ 1
+MELON P(I0-T)=$ 300 P(I0)=$ 250 P(I0+T)=$ 1 P(I0+2T)=$ 1
+EGG P(I0-T)=$ 70 P(I0)=$ 50 P(I0+T)=$ 40 P(I0+2T)=$ 39
+MILK P(I0-T)=$ 256 P(I0)=$ 160 P(I0+T)=$ 1 P(I0+2T)=$ 1
+WOOL P(I0-T)=$ 240 P(I0)=$ 200 P(I0+T)=$ 1 P(I0+2T)=$ 1
+FERTILIZER P(I0-T)=$ 140 P(I0)=$ 100 P(I0+T)=$ 60 P(I0+2T)=$ 20
+Those numbers should match the P(I0−T) / P(I0+T) / P(I0+2T) column in the rules exactly. Now the important plot: what happens to your price as you sell.
+
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+
+qty = np.arange(0, 601)
+for item in ["WHEAT", "CARROT", "TOMATO", "EGG"]:
+axes[0].plot(qty, [price_at(item, I0 + q) for q in qty], label=item, lw=2)
+for item in ["STRAWBERRY", "MELON", "MILK", "WOOL"]:
+axes[1].plot(qty, [price_at(item, I0 + q) for q in qty], label=item, lw=2)
+
+for ax, title in zip(axes, ["Staples — shallow glut curves", "Premium — cliff-edge glut curves"]):
+ax.set_xlabel("cumulative units sold into the market")
+ax.set_ylabel("unit price ($)")
+ax.set_title(title)
+ax.grid(alpha=.3)
+ax.legend()
+plt.tight_layout()
+plt.show()
+
+6.1 The killer table: total revenue vs quantity dumped
+This is the table that decides your whole strategy. It answers: "if I sell N units of X into a fresh market, how much do I actually get, and what is the last unit worth?"
+
+rows = []
+for item in ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL"]:
+r = {"item": item, "base": MARKET_PARAMS[item]["base"]}
+for n in (25, 50, 100, 200, 400, 800, 1600):
+rev, _ = sell_revenue(item, n)
+r[f"avg@{n}"] = round(rev / n, 1)
+# market depth: units until the price halves, and until it hits the floor
+inv, half, floor_at = I0, None, None
+b = MARKET_PARAMS[item]["base"]
+for k in range(1, 4001):
+px = price_at(item, inv)
+if half is None and px <= b / 2:
+half = k
+if px <= 1:
+floor_at = k
+break
+inv += 1
+r["half_price_at"] = half
+r["floor_at"] = floor_at if floor_at else ">4000"
+rows.append(r)
+
+depth = pd.DataFrame(rows)
+depth
+item base avg@25 avg@50 avg@100 avg@200 avg@400 avg@800 avg@1600 half_price_at floor_at
+0 WHEAT 25 23.1 22.5 21.9 21.5 20.8 20.3 19.7 NaN >4000
+1 CARROT 35 31.3 29.6 27.4 24.2 19.6 13.2 7.1 231.0 843
+2 TOMATO 60 51.8 48.2 43.2 36.1 26.1 14.2 7.6 136.0 530
+3 STRAWBERRY 120 97.0 73.0 38.5 19.7 10.4 5.7 3.3 32.0 63
+4 MELON 250 248.1 242.0 217.2 132.6 66.8 33.9 17.5 113.0 159
+5 EGG 50 46.0 44.9 43.7 42.5 41.4 40.2 39.0 NaN >4000
+6 MILK 160 134.9 108.6 62.0 31.5 16.3 8.6 4.8 39.0 77
+7 WOOL 200 188.6 153.1 79.7 40.3 20.7 10.8 5.9 43.0 60
+6.2 What this table means, in plain words
+Product Market depth Strategic role
+EGG effectively infinite (still ~$37 after 2,000 units) 🏆 the money printer. Log glut curve. Sell as much as you can produce, forever.
+WHEAT very deep (~$19 at 1,600 units) cash floor + animal feed. Never crashes.
+CARROT deep-ish, halves ~230 units good filler; sqrt glut is forgiving
+TOMATO halves ~140 units okay in small volume
+MELON ~158 units to the floor huge unit value, tiny depth. One field, sold in drips.
+MILK ~76 units to the floor drip only
+STRAWBERRY ~62 units to the floor drip only
+WOOL ~58 units to the floor the shallowest market in the game
+6.3 Buying, and the no-arbitrage rule
+Only WHEAT and FERTILIZER can be bought back. The buy price is quoted at the post-buy inventory and the sell price at the pre-sell inventory, so buy-then-sell nets exactly zero. There is no market-making exploit. Buying wheat pushes inventory below I0, and wheat's scarcity side is sqrt with target=0.80 — steep. Buying 600 wheat takes the price from $25 to ~$50.
+
+def buy_cost(item, n, inv=I0):
+"""Exact coins to buy n units, starting at market inventory inv."""
+total = 0.0
+for _ in range(int(n)):
+inv -= 1
+total += price_at(item, inv)
+return total, inv
+
+for n in (50, 100, 200, 400, 800, 1600):
+c, inv = buy_cost("WHEAT", n)
+print(f"buy {n:>4} wheat: total ${c:>8,.0f} avg ${c/n:>5.1f} final unit price ${price_at('WHEAT', inv):>4.0f}")
+buy 50 wheat: total $ 1,488 avg $ 29.8 final unit price $ 32
+buy 100 wheat: total $ 3,170 avg $ 31.7 final unit price $ 35
+buy 200 wheat: total $ 6,890 avg $ 34.5 final unit price $ 39
+buy 400 wheat: total $ 15,340 avg $ 38.4 final unit price $ 45
+buy 800 wheat: total $ 35,092 avg $ 43.9 final unit price $ 53
+buy 1600 wheat: total $ 82,680 avg $ 51.7 final unit price $ 65
+7. Town demand — why prices regenerate
+The town consumes products for free, permanently removing them from market inventory. That pushes inventory back toward (and below) I0, which pushes prices back up. So market prices are not only a function of what the two of you sell — there is a constant drain underneath them, and it grows as the season goes on and more shops unlock.
+
+Town centre: 1 of each non-fertilizer product every 12 turns → 2/day. Doubles to 4/day after day 10, quadruples to 8/day after day 20.
+Shops: unlock every 3 days (random from the pool, cumulative). Each consumes 1 of every product it demands every 4 turns → 6/day per product. Single-product shops consume 2× → 12/day.
+Shop Demands
+Bakery eggs, wheat
+Pizza Shop milk, tomatoes, wheat
+Brunch Spot eggs, wheat, strawberries
+Yarn Store wool (2×)
+Ice Cream Shop strawberries, milk, wheat
+Pet Cafe carrots (2×)
+Smoothie Shop strawberries, milk
+Farmers Market wheat, carrots, tomatoes, strawberries
+SHOP_DEMAND = {
+"BAKERY": {"EGG": 1, "WHEAT": 1},
+"PIZZA_SHOP": {"MILK": 1, "TOMATO": 1, "WHEAT": 1},
+"BRUNCH_SPOT": {"EGG": 1, "WHEAT": 1, "STRAWBERRY": 1},
+"YARN_STORE": {"WOOL": 2},
+"ICE_CREAM_SHOP":{"STRAWBERRY": 1, "MILK": 1, "WHEAT": 1},
+"PET_CAFE": {"CARROT": 2},
+"SMOOTHIE_SHOP": {"STRAWBERRY": 1, "MILK": 1},
+"FARMERS_MARKET":{"WHEAT": 1, "CARROT": 1, "TOMATO": 1, "STRAWBERRY": 1},
+}
+PRODUCTS = ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL"]
+
+how many shops demand each product, if ALL shops were unlocked (late game)
+rows = []
+for prod in PRODUCTS:
+per_shop = sum(v.get(prod, 0) for v in SHOP_DEMAND.values())
+rows.append(dict(
+product=prod,
+shops_demanding=sum(1 for v in SHOP_DEMAND.values() if prod in v),
+shop_units_per_day_all_unlocked=per_shop * 6, # 6 ticks/day
+town_centre_per_day_d0=2, town_centre_per_day_d10=4, town_centre_per_day_d20=8,
+max_daily_drain=per_shop * 6 + 8,
+))
+town = pd.DataFrame(rows).sort_values("max_daily_drain", ascending=False)
+town
+product shops_demanding shop_units_per_day_all_unlocked town_centre_per_day_d0 town_centre_per_day_d10 town_centre_per_day_d20 max_daily_drain
+0 WHEAT 5 30 2 4 8 38
+3 STRAWBERRY 4 24 2 4 8 32
+1 CARROT 2 18 2 4 8 26
+6 MILK 3 18 2 4 8 26
+2 TOMATO 2 12 2 4 8 20
+5 EGG 2 12 2 4 8 20
+7 WOOL 1 12 2 4 8 20
+4 MELON 0 0 2 4 8 8
+7.1 🏆 The scarcity trade
+Read the mechanic again: the town removes product from the market every single day, for free, whether or not anybody is producing it. So for a product nobody sells, inventory falls below I0 and the price climbs, all season, on the scarcity side of the curve.
+
+Combine that with §6 and you get the most useful number in the game: for each product, how much can I supply before I start crushing my own price?
+
+Product Town drain (late, all shops) One tile/animal supplies Room
+Strawberry ~32/day 0.25/day (tile) ~128 tiles
+Milk ~26/day 1.5/day (cow) ~17 cows
+Wool ~20/day 1.33/day (sheep) ~15 sheep
+Egg ~20/day 2/day (goose) ~10 geese (but a flat glut curve — overshoot freely)
+Wheat ~38/day 1/day (tile) ~38 tiles
+Carrot ~20/day 1/day (tile) ~20 tiles
+Melon ~8/day (no shop wants melon) 0.6/day (tile) ~13 tiles
+Strawberry, milk and wool cannot realistically be over-produced by one farm. Their prices rise all season — in a game where nobody touched them they finished around $300, $310 and $250 against bases of $120, $160 and $200.
+
+Melon is the opposite: high unit value, and no shop demands it at all. A small block is excellent; a large one crashes to $25.
+
+7.2 Reading the opponent
+You can see the opponent's tiles, though not their shed. Their farm tells you what is ripening and roughly when it will hit the market — and since you share one market, their harvest schedule is information about your future prices. Note the flip side too: if you both discover the same under-supplied market, the room in the table above is split between you.
+
+Labour — the Fibonacci hiring curve
+HIRE costs farmHandCostMult × fib(hires_today) with fib = 1, 1, 2, 3, 5, 8, 13, 21, ... and it resets every morning. So the first ten hands of a day cost $143 in total — for 240 extra actions. That is roughly $0.60 per action. Labour is nearly free.
+
+Then Fibonacci does what Fibonacci does.
+
+def fib_costs(n):
+a, b, out = 1, 1, []
+for _ in range(n):
+out.append(a)
+a, b = b, a + b
+return out
+
+costs = fib_costs(22)
+rows, tot = [], 0
+for i, c in enumerate(costs, start=1):
+tot += c
+rows.append(dict(hands=i, cost_of_this_hand=c, total_cost_today=tot,
+extra_actions=i * 24, cost_per_action=round(tot / (i * 24), 2),
+season_cost_if_daily=tot * 28))
+pd.DataFrame(rows)
+hands cost_of_this_hand total_cost_today extra_actions cost_per_action season_cost_if_daily
+0 1 1 1 24 0.04 28
+1 2 1 2 48 0.04 56
+2 3 2 4 72 0.06 112
+3 4 3 7 96 0.07 196
+4 5 5 12 120 0.10 336
+5 6 8 20 144 0.14 560
+6 7 13 33 168 0.20 924
+7 8 21 54 192 0.28 1512
+8 9 34 88 216 0.41 2464
+9 10 55 143 240 0.60 4004
+10 11 89 232 264 0.88 6496
+11 12 144 376 288 1.31 10528
+12 13 233 609 312 1.95 17052
+13 14 377 986 336 2.93 27608
+14 15 610 1596 360 4.43 44688
+15 16 987 2583 384 6.73 72324
+16 17 1597 4180 408 10.25 117040
+17 18 2584 6764 432 15.66 189392
+18 19 4181 10945 456 24.00 306460
+19 20 6765 17710 480 36.90 495880
+20 21 10946 28656 504 56.86 802368
+21 22 17711 46367 528 87.82 1298276
+How to read it
+Hands/day Cost/day Actions/day (incl. farmer) $/action
+5 $12 144 $0.08
+10 $143 264 $0.54
+14 $986 360 $2.74
+16 $2,583 408 $6.33
+18 $6,764 456 $14.83
+20 $17,710 504 $35.14
+An action is worth roughly $30–60 on a well-run farm (one goose harvest = 3 eggs ≈ $130 for 3 actions). So hiring is profitable up to about 16–18 hands per day, and the right number scales with your income: 3–5 hands on day 1 when you're poor, 15–18 by day 20.
+
+A workable rule of thumb: hire while next_hire_cost < 0.02 × current_bank and while you actually have tasks for the extra body.
+
+⚠️ Hands are hired via a market order, and market orders resolve after actions. A hand hired on turn t is available from turn t+1. Hire at hour 0 so you get a full 24-turn day out of them — hiring at hour 20 buys you 3 actions at full price.
+
+The action budget — your real constraint
+Land is cheap ($7k for 100 tiles). Seeds are cheap. What you cannot buy cheaply is unit-turns.
+
+unit-turns per day = 24 × (1 + hands)
+Now cost out one day of one goose, honestly:
+
+Step Turns
+walk to the tile from the last tile ~1–2
+FEED 1
+CARE 1
+HARVEST 1
+amortised trip back to shed to DROP ~1
+total ~5–6
+With 16 hands (408 unit-turns/day) you can service roughly 70 animals, or a mix of ~40 animals plus ~30 crop tiles. That, not land, is what caps your farm.
+
+Three ways to buy back turns
+Cluster around the shed. Every tile of distance is a wasted turn, twice a day. Fill the tiles adjacent to the shed first and expand outward. A tight 5×5 beats a sprawling 10×10 with the same unit count.
+Don't collect fertilizer unless you're running melons.
+Batch your SELLs. Market orders are free and don't cost unit-turns — but produce has to reach the shed, so plan DROP trips, and remember the 100-item shed cap: a 60-animal farm makes
+100 units/day and will silently bin the overflow at the nightly dump.
+
+rows = []
+for hands in (0, 3, 5, 8, 10, 12, 14, 16, 18):
+turns = 24 * (1 + hands)
+cost = sum(fib_costs(hands))
+rows.append(dict(
+hands=hands, unit_turns_per_day=turns, hire_cost_per_day=cost,
+animals_serviceable=turns // 6,
+crop_tiles_serviceable=turns // 2, # ~1 water + amortised plant/harvest/walk
+))
+pd.DataFrame(rows)
+hands unit_turns_per_day hire_cost_per_day animals_serviceable crop_tiles_serviceable
+0 0 24 0 4 12
+1 3 96 4 16 48
+2 5 144 12 24 72
+3 8 216 54 36 108
+4 10 264 143 44 132
+5 12 312 376 52 156
+6 14 360 986 60 180
+7 16 408 2583 68 204
+8 18 456 6764 76 228
+10. A first agent that actually works
+Not the wheat-loop toy from the docs — a small but complete agent that:
+
+hires a few hands every morning,
+keeps every unit busy with a nearest-task assignment,
+plants and waters wheat + carrot,
+harvests and walks produce back to the shed,
+sells at a sensible drip rate instead of dumping,
+and liquidates everything in the last few turns.
+It's ~150 lines and it beats starter essentially 100% of the time. The skeleton — market plan, task list, assignment — is worth keeping even as you replace the decisions inside it.
+
+%%writefile main.py
+"""Kaggriculture — a simple, complete baseline agent.
+
+A complete, readable agent: hires hands, keeps every unit on a nearest-task
+schedule, plants/waters/harvests carrots and wheat, walks produce back to the
+shed, drip-sells, and liquidates at the end. Beats starter ~20x.
+
+Deliberately simple: no market modelling, no livestock. The structure is the
+part to keep; the decisions inside it are the part to improve.
+"""
+
+CROP = {"WHEAT": dict(seed=10, maxday=4, maxy=6),
+"CARROT": dict(seed=20, maxday=3, maxy=4)}
+PRODUCTS = ["WHEAT", "CARROT", "TOMATO", "STRAWBERRY", "MELON", "EGG", "MILK", "WOOL"]
+DIRS = {"NORTH": (0, -1), "SOUTH": (0, 1), "EAST": (1, 0), "WEST": (-1, 0)}
+LAST_DAY = 29
+
+def bfs(tiles, start, n):
+"""Distances over unlocked tiles. Needed because the owned quadrants can
+form an L-shape, where greedy Manhattan stepping wedges a unit forever."""
+dist = {start: 0}
+q, head = [start], 0
+while head < len(q):
+x, y = q[head]
+head += 1
+d = dist[(x, y)] + 1
+for dx, dy in ((0, -1), (0, 1), (1, 0), (-1, 0)):
+nx, ny = x + dx, y + dy
+if 0 <= nx < n and 0 <= ny < n and (nx, ny) not in dist and tiles[ny][nx] != "LOCKED":
+dist[(nx, ny)] = d
+q.append((nx, ny))
+return dist
+
+def move_towards(tiles, start, goal, n):
+if start == goal:
+return None
+back = bfs(tiles, goal, n)
+best = None
+for op, (dx, dy) in DIRS.items():
+nx, ny = start[0] + dx, start[1] + dy
+if not (0 <= nx < n and 0 <= ny < n) or tiles[ny][nx] == "LOCKED":
+continue
+d = back.get((nx, ny))
+if d is not None and (best is None or d < best[0]):
+best = (d, op)
+return best[1] if best else None
+
+def agent(obs):
+p = obs["player"]
+me = obs["farms"][p]
+priv = obs["private"]
+tiles = me["tiles"]
+n = len(tiles)
+day, hour = obs["day"], obs["hour"]
+money = me["money"]
+shed = priv["shed"]
+seeds = dict(priv["seeds"])
+invs = priv["inventories"]
+
+h = n // 2
+home = [t for t in [(h - 1, h - 1), (h, h - 1), (h - 1, h), (h, h)]
+        if tiles[t[1]][t[0]] != "LOCKED"]
+home_set = set(home)
+units = [tuple(me["farmer"])] + [tuple(u) for u in me["hands"]]
+market = []
+
+# ---- market. Hour 0 is HIRE-only so the 10-order cap never eats a SELL.
+if hour == 0 and day < LAST_DAY:
+    for _ in range(6):
+        market.append(["HIRE"])
+else:
+    if len(me["unlocked_quadrants"]) < 4 and day < 20 and money > 5000:
+        market.append(["BUY_LAND"])
+    empt = sum(1 for r in tiles for t in r if t is None)
+    for crop, until in (("CARROT", 26), ("WHEAT", 25)):
+        want = min(empt, 30) - seeds.get(crop, 0)
+        if want > 0 and day <= until and money > CROP[crop]["seed"] * want + 400:
+            market.append(["BUY_SEED", crop, want])
+            break
+    for item in PRODUCTS:
+        if shed.get(item, 0) > 0:
+            market.append(["SELL", item, shed[item]])
+market = market[:10]
+
+# ---- tasks: (priority, position, op, needs_a_seed_of)
+tasks = []
+for y in range(n):
+    for x in range(n):
+        t = tiles[y][x]
+        if t == "LOCKED":
+            continue
+        if t is None:
+            for crop, until in (("CARROT", 26), ("WHEAT", 25)):
+                if day <= until and seeds.get(crop, 0) > 0:
+                    tasks.append((3, (x, y), ["PLANT", crop], crop))
+                    break
+        elif t["kind"] == "WEED":
+            tasks.append((4, (x, y), ["DIG"], None))
+        elif t["kind"] == "PLANT":
+            c = CROP.get(t["crop"])
+            if c is None:
+                continue
+            age = day - t["planted_day"]
+            # Water BEFORE harvesting: the last day in the bonus window is
+            # still worth a whole extra unit.
+            if not t["watered_today"] and age <= c["maxday"] and day < LAST_DAY:
+                tasks.append((1, (x, y), ["WATER"], None))
+            elif age >= c["maxday"] and t["yield_units"] > 0:
+                tasks.append((2, (x, y), ["HARVEST"], None))
+tasks.sort(key=lambda t: t[0])
+
+# ---- assign each unit its cheapest useful task
+ops, taken = [], set()
+seed_left = dict(seeds)
+for idx, pos in enumerate(units):
+    inv = invs[idx] if idx < len(invs) else {}
+    carried = sum(v for k, v in inv.items() if k in PRODUCTS)
+    # a hand can spawn on a LOCKED centre tile; there it can only move
+    if tiles[pos[1]][pos[0]] == "LOCKED":
+        goal = min(home_set, key=lambda q: abs(q[0] - pos[0]) + abs(q[1] - pos[1]))
+        mv = move_towards(tiles, pos, goal, n)
+        ops.append([mv] if mv else ["PASS"])
+        continue
+
+    op = None
+    if pos in home_set and carried > 0:
+        op = ["DROP"]
+    elif carried >= 8 or (hour >= 21 and carried > 0):
+        goal = min(home_set, key=lambda q: abs(q[0] - pos[0]) + abs(q[1] - pos[1]))
+        mv = move_towards(tiles, pos, goal, n)
+        op = [mv] if mv else None
+
+    if op is None:
+        d = bfs(tiles, pos, n)
+        best = None
+        for i, (prio, tp, top, need) in enumerate(tasks):
+            if i in taken or tp not in d:
+                continue
+            if need and seed_left.get(need, 0) <= 0:
+                continue
+            s = d[tp] + prio * 3
+            if best is None or s < best[0]:
+                best = (s, i, tp, top, need)
+        if best is not None:
+            _, i, tp, top, need = best
+            taken.add(i)
+            if pos == tp:
+                op = top
+                if need:                       # reserve it: over-requesting
+                    seed_left[need] -= 1       # drops ALL plants of that crop
+            else:
+                mv = move_towards(tiles, pos, tp, n)
+                op = [mv] if mv else ["PASS"]
+    ops.append(op or ["PASS"])
+
+return {"farmer": ops[0], "hands": ops[1:len(units)], "market": market}
+The framework calls the LAST callable defined in this file, not the one named
+agent. Never add a helper below this line.
+Writing main.py
+from kaggle_environments import make
+
+env = make("kaggriculture", configuration={"episodeSteps": 720, "seed": 7})
+env.run(["main.py", "starter"])
+r = [s["reward"] for s in env.steps[-1]]
+print(f"baseline agent: ${r[0]:,.0f} starter: ${r[1]:,.0f}")
+
+typically lands around $9-10k against starter's ~$3.3k
+baseline agent: $8,129 starter: $3,277
+11. A local testing harness
+One game tells you almost nothing — town shops unlock randomly, weeds spawn randomly. Always test over many seeds, and always test both seat positions (player 0 and player 1 are not symmetric in market-order resolution).
+
+This harness gives you a win-rate and a bank distribution in a couple of minutes.
+
+import statistics
+from kaggle_environments import make
+
+def duel(a, b, games=8, steps=720, verbose=True):
+"""Play games episodes of a vs b, alternating seats. Returns a summary dict."""
+wins = draws = losses = 0
+my_banks, opp_banks = [], []
+for g in range(games):
+swap = g % 2 == 1
+pair = [b, a] if swap else [a, b]
+env = make("kaggriculture", configuration={"episodeSteps": steps, "seed": 1000 + g})
+env.run(pair)
+rw = [s["reward"] or 0 for s in env.steps[-1]]
+mine, theirs = (rw[1], rw[0]) if swap else (rw[0], rw[1])
+my_banks.append(mine)
+opp_banks.append(theirs)
+if mine > theirs:
+wins += 1
+elif mine == theirs:
+draws += 1
+else:
+losses += 1
+if verbose:
+print(f" game {g} (seat {int(swap)}): ${mine:>10,.0f} vs ${theirs:>10,.0f}"
+f" {'WIN ' if mine > theirs else ('TIE ' if mine == theirs else 'LOSS')}")
+return dict(
+games=games, wins=wins, draws=draws, losses=losses,
+winrate=round(wins / games, 3),
+my_mean=round(statistics.mean(my_banks)),
+my_median=round(statistics.median(my_banks)),
+my_min=round(min(my_banks)), my_max=round(max(my_banks)),
+opp_mean=round(statistics.mean(opp_banks)),
+)
+
+res = duel("main.py", "starter", games=4)
+print()
+print(res)
+game 0 (seat 0): $ 6,383 vs $ 3,290 WIN
+game 1 (seat 1): $ 6,917 vs $ 3,216 WIN
+game 2 (seat 0): $ 7,158 vs $ 3,321 WIN
+game 3 (seat 1): $ 9,157 vs $ 3,418 WIN
+
+{'games': 4, 'wins': 4, 'draws': 0, 'losses': 0, 'winrate': 1.0, 'my_mean': 7404, 'my_median': 7038, 'my_min': 6383, 'my_max': 9157, 'opp_mean': 3311}
+Debugging a broken agent
+If an episode errors, the environment swallows it. Get the traceback like this:
+
+env = make("kaggriculture", configuration={"episodeSteps": 240}, debug=True)
+env.run(["main.py", "pass"])
+for i, s in enumerate(env.steps[-1]):
+print(i, s["status"])
+
+with debug=True, exceptions from your agent are printed above this line
+0 DONE
+1 DONE
+Instrumenting: where is my money coming from?
+Add a tracer to your agent and print a per-day report. This is how you find out that you're spending $800/day on wheat you don't need, or throwing 40 eggs a day into the shed-overflow bin.
+
+import collections
+from kaggle_environments import make
+
+def trace_episode(agent_file="main.py", opponent="starter", steps=720):
+env = make("kaggriculture", configuration={"episodeSteps": steps})
+env.run([agent_file, opponent])
+hist = []
+for st in env.steps:
+o = st[0]["observation"]
+if "farms" not in o:
+continue
+hist.append(dict(step=o["step"], day=o["day"],
+money=o["farms"][0]["money"],
+opp=o["farms"][1]["money"],
+**{f"px_{k}": v for k, v in o["market"]["prices"].items()}))
+return pd.DataFrame(hist)
+
+tr = trace_episode(steps=720)
+daily = tr.groupby("day").last()
+ax = daily[["money", "opp"]].plot(figsize=(11, 4), lw=2, title="Bank balance by day")
+ax.set_ylabel("$"); ax.grid(alpha=.3); plt.show()
+
+px_cols = [c for c in daily.columns if c.startswith("px_")]
+ax = daily[px_cols].plot(figsize=(11, 4), title="Market prices by day")
+ax.set_ylabel("$"); ax.grid(alpha=.3); plt.show()
+
+Submitting — and the pitfalls that break submissions
+The mechanics
+Your submission is a main.py at the root defining a callable named agent (a module-level def agent(obs) is the safe form). Multi-file agents go in a .tar.gz with main.py at the root.
+
+pip install kaggle
+
+token: https://www.kaggle.com/settings/api -> ~/.kaggle/access_token
+kaggle competitions submit kaggriculture -f main.py -m "v1: baseline"
+kaggle competitions submissions kaggriculture
+5 submissions/day, only your latest 2 stay active and are used for the final leaderboard.
+On upload a validation episode runs your agent against itself. Any exception → Error.
+Files land in /kaggle_simulations/agent/ — if you read a data file, resolve the path relative to os.path.dirname(os.path.abspath(file)), never the CWD.
+Limits: 100 MiB, 6.5 GiB RAM, 1.6 vCPU.
+The nine things that actually go wrong
+🔍 agent is not the function that gets called — the LAST callable in the file is. This is the single nastiest gotcha in the whole competition. From kaggle_environments/agent.py:
+exec(code_object, env)
+return [v for v in env.values() if callable(v)][-1] # <-- the LAST one
+Define one innocent helper below def agent(...) and the framework calls the helper instead, with the observation as its first argument. You get a TypeError, or worse, a silent wrong answer. Keep agent as the final def in main.py, and don't do from math import sqrt after it either.
+Returning the wrong number of hand ops. hands must have exactly one entry per hired hand, in order. Recompute len(me["hands"]) every turn — it changes, and hands hired this turn only appear next turn (market orders resolve after actions).
+Hands stuck on LOCKED shed tiles. See §2.3 — the first hand you hire spawns on (5,4), which is locked until you buy the NE quadrant. On a locked tile only movement works.
+Module-level state that isn't reset. Your agent process may be reused across episodes. Key any cache on something episode-specific, or reset when obs["step"] == 0.
+Assuming obs["step"] exists. Be defensive: obs.get("step", obs["day"]*24 + obs["hour"]).
+Walking off the board or into "LOCKED". Silent no-op; your unit stands still forever. Always bounds-check and locked-check before emitting a move. Note the quadrants can form an L-shape, so greedy Manhattan stepping can wedge a unit — use BFS.
+The atomic-PLANT rule. Over-request a crop and all of that crop's plants are dropped, not just the excess. Reserve seeds across units within a turn.
+Ignoring the 100-item shed cap. Overflow at the nightly dump is destroyed silently. If you harvest more than 100 units a day you must DROP and SELL during the day.
+
+10 market orders. Extras are dropped silently, and it is usually your SELL that gets cut — HIRE spam at hour 0 is a classic way to starve your own sell orders. Order the list by importance and truncate to 10 yourself.
+A pre-flight check to run before every submission
+import importlib.util, sys, time
+from kaggle_environments import make
+
+def preflight(path="main.py"):
+ok = True
+
+# 1. imports cleanly and exposes `agent`
+spec = importlib.util.spec_from_file_location("subm", path)
+mod = importlib.util.module_from_spec(spec)
+t0 = time.time()
+spec.loader.exec_module(mod)
+print(f"[ok] imports in {time.time()-t0:.2f}s")
+if not callable(getattr(mod, "agent", None)):
+    print("[FAIL] no module-level callable named `agent`"); ok = False
+
+# 2. self-play validation episode (this is what Kaggle runs)
+t0 = time.time()
+env = make("kaggriculture", configuration={"episodeSteps": 720}, debug=True)
+env.run([path, path])
+dur = time.time() - t0
+st = [s["status"] for s in env.steps[-1]]
+print(f"[{'ok' if all(s == 'DONE' for s in st) else 'FAIL'}] self-play status {st}  ({dur:.1f}s)")
+if not all(s == "DONE" for s in st):
+    ok = False
+
+# 3. per-turn latency
+print(f"[info] ~{dur/720*1000:.1f} ms per turn per agent")
+
+# 4. beats the baselines
+for opp in ("pass", "random", "starter"):
+    env = make("kaggriculture", configuration={"episodeSteps": 720})
+    env.run([path, opp])
+    r = [s["reward"] or 0 for s in env.steps[-1]]
+    verdict = "ok" if r[0] > r[1] else "FAIL"
+    if r[0] <= r[1]:
+        ok = False
+    print(f"[{verdict}] vs {opp:8} ${r[0]:>12,.0f}  vs  ${r[1]:>12,.0f}")
+
+print("\nPREFLIGHT", "PASSED ✅" if ok else "FAILED ❌")
+return ok
+preflight("main.py")
+[ok] imports in 0.00s
+[ok] self-play status ['DONE', 'DONE'] (3.6s)
+[info] ~5.0 ms per turn per agent
+[ok] vs pass $ 10,194 vs $ 3,000
+[ok] vs random $ 8,219 vs $ 0
+[ok] vs starter $ 8,575 vs $ 3,353
+
+PREFLIGHT PASSED ✅
+True
+13. Where to go next
+You now have the full rule set, the price function, the market-depth table, the labour curve, the action budget, a working agent, and a test harness. That is everything you need to start iterating.
+
+The gap between this baseline and a competitive agent is not one clever trick — it is a handful of ordinary decisions, each made deliberately instead of by accident:
+
+When to buy land. $7,000 buys 4x the tiles and it compounds. Work out your own payback period.
+What to plant, and how much of it. §4 gives you coins-per-tile-day and coins-per-action; §6 tells you how much the market will actually absorb. You need both numbers, not either one.
+How much labour. Hire at hour 0, and scale with the workload rather than the bank balance.
+How, and when, to sell. Re-read §6: revenue is Σ price(I0 + k), not n x price(I0).
+Routing. Instrument it before you optimise it — count how many of your unit-turns are MOVE. The number will probably surprise you.
+How to actually improve
+The single most useful habit: count things. Wrap your agent, log the ops it emits per day, and look at the census. Most of the big early wins are not strategic — they are a scheduler quietly burning most of your labour, or the shed silently binning a third of your harvest.
+
+And test properly: many seeds, both seats, and — once you have two candidate agents — play them against each other, not just against starter. A baseline that never sells is not competing with you for market depth, so it will happily tell you that strategies are good when they are not.
+
+Happy farming. 🌾
+
+
+Close
